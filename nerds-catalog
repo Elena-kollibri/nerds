@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>nerds-catalog</title>
+		<style>
+			@font-face {
+				font-family: Roboto;
+			}
+			h1 {
+				font-family: Roboto, Areal, sans-serif;
+			}
+		</style>
+	    <link href="css/normalize.css" rel="stylesheet">
+		<link href="css/catalog.css" rel="stylesheet">
+	</head>
+	<body>
+		<header class="main-header">
+			<div class="container">
+				<div class="header-top">
+					<div class="logo">
+						<img src="img/nerds-logo.png" alt="nerds">
+					</div>	
+					<div class="main-navigation">
+						<ul>
+							<li><a href="#">студия</a></li>
+							<li><a href="#">клиенты</a></li>
+							<li><a href="#">магазин</a></li>
+							<li><a href="#">контакты</a></li>
+						</ul>
+					</div>
+					<div class="basket">
+						<a href="#">корзина</a>
+					</div>
+				</div>
+				<h1 class="header-title">Магазин готовых шаблонов</h1>
+			</div>
+		</header>
+		<main class="main-container clearfix">
+			<div class="main-left clearfix">
+				<form action="/echo" method="post" oninput="costoutput.value=cost.value">
+					<div class="cost-block">
+						<label for="cost" class="cost">стоимость:</label>
+						<input type="range" id="cost" name="cost" min="1" max="15000" step="1000">
+					</div>	 	
+					<div class="output-area">
+                    ОТ <output name="cost" class="min">0</output>
+                	ДО <output name="cost" class="max">15000</output>
+                	</div>
+				</form>
+				<form action="form.php" class="form">
+					<h2 class="grid">сетка</h2>
+                	<fieldset>
+                    	<label>
+                        	<input type="radio" name="supply" value="adaptive" checked>адаптивная   
+                    	</label>
+                     	<label>
+                        	<input type="radio" name="supply" value="fixed"> фиксированная
+                    	</label>
+                    	<label>
+                        	<input type="radio" name="supply" value="rubber">резиновая
+                    	</label>    
+                	</fieldset>
+                	<h2 class="features">особенности</h2>
+                	<fieldset>
+                    	<label>
+                       		<input type="checkbox" checked>слайдер
+                    	</label>
+                   		<label>
+                       		<input type="checkbox">блок преимуществ
+                   		</label>
+                   		<label>
+                       		<input type="checkbox" checked>новости
+                   		</label>
+                   		<label>
+                   			<input type="checkbox">галерея
+                   		</label>
+                   		<label>
+                       		<input type="checkbox">корзина
+                   		</label>
+               		</fieldset>
+               		<button type="submit" class="submit">показать</button>
+            	</form>
+            </div>		
+            <div class="main-right">
+            	<div class="sorting">
+            	    <h2 class="sorting-title">Сортировать:</h2>
+            	    <div class="sorting-links"> 
+            	        <a href="#">По цене</a>
+            	        <a href="#">По типу</a>
+            	        <a href="#">По названию</a>
+            	        <a href="#" class="up"></a>
+            	        <a href="#" class="down"></a>
+            	    </div>    
+            	</div>
+            	<div class="templates">
+            		<div class="templates-block">
+            			<div class="templates-top"></div>
+            			<div class="templates-example">
+            				<img src="img/sedona.jpg" alt="sedona">
+            			</div>
+            		</div>
+            		<div class="templates-block">
+            			<div class="templates-top"></div>
+            			<div class="templates-example">	
+            				<img src="img/pink.jpg" alt="pink">
+            			</div>
+            		</div>
+            		<div class="templates-block">
+            			<div class="templates-top"></div>
+            			<div class="templates-example">				
+            				<img src="img/barbershop.jpg" alt="borodinski">
+            			</div>
+            		</div>
+            		<div class="templates-block">
+            			<div class="templates-top"></div>
+            			<div class="templates-example">
+            				<img src="img/mishka.jpg" alt="mishka">
+            			</div>
+            		</div>
+            		<div class="templates-block">
+            			<div class="templates-top"></div>
+            			<div class="templates-example">
+            				<img src="img/aplus.jpg" alt="Aplus">
+            			</div>
+            		</div>
+            		<div class="templates-block">
+            			<div class="templates-top"></div>
+            			<div class="templates-example">
+            				<img src="img/kvast.jpg" alt="кваст">
+            			</div>
+            		</div>
+            	</div>
+            	<div class="paginator">
+            	    <a href="#1" class="first">1</a>
+            	    <a href="#2">2</a>
+            	    <a href="#3">3</a>
+            	    <a href="#next" class="next">Следующая</a>
+            	</div>
+            </div>
+        </main>
+		<footer class="footer-container clearfix">
+			<img src="img/map.png" width="100%" alt="map">
+			<div class="contacts-information">
+				<div class="contacts-title">NЁRDS DESIGN STUDIO</div>
+				<div class="contacts-adress">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</div>
+				<div class="contacts-telephone">тел. +7 (812) 275-75-75</div>
+				<a href="#" class="btn">Напишите нам</a>
+			</div>
+			<img src="img/map-marker.png" alt="nerds" class="map-marker">
+			<div class="footer-social">
+				<a href="#" class="social-btn social-btn-vkontakte"></a>
+				<a href="#" class="social-btn social-btn-facebook"></a>
+				<a href="#" class="social-btn social-btn-instagram"></a>
+			</div>	
+			<div class="footer-slogan">
+				<div class="footer-title">Давайте дружить, это выгодно!</div>
+				<div class="footer-text">Скидка 10% для друзей из социальных сетей.</div>
+			</div>
+		</footer>	
+	</body>
+</html>	
+	
