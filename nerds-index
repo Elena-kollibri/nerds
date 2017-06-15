@@ -6,9 +6,11 @@
 		<style>
 			@font-face {
 				font-family: Roboto;
+				src: url("fonts/Roboto-master/Roboto-Regular.ttf"),
+				url("fonts/web/roboto-woff");
 			}
 			h1 {
-				font-family: Roboto, Areal, sans-serif;
+				font-family: Roboto;
 			}
 		</style>
 	    <link href="css/normalize.css" rel="stylesheet">
@@ -16,31 +18,56 @@
 	</head>
 	<body>
 		<header class="main-header clearfix">
-			<div class="container">
-				<div class="header-top"> 
-					<div class="logo">
-						<img src="img/nerds-logo.png" alt="nerds" class="logo">
-					</div>
-					<div class="main-navigation">
-						<ul>
-							<li><a href="#">студия</a></li>
-							<li><a href="#">клиенты</a></li>
-							<li><a href="#">магазин</a></li>
-							<li><a href="#">контакты</a></li>
-						</ul>
-					</div>
-					<div class="basket">
-						<a href="#">корзина</a>
-					</div>
-				</div>	
-				<div class="header-left">	
-					<h1 class="header-slogan">Долго, дорого, скрупулезно.</h1>		
-					<p class="header-text">Математически выверенный дизайн <br>для вашего сайта или	мобильного приложения. </p>
-					<a 	href="#" class="btn"><span>узнать больше</span></a>
+			<div class="container clearfix">
+				<div class="logo">
+					<img src="img/nerds-logo.png" alt="nerds" class="logo">
 				</div>
-			</div>	 	
+				<div class="main-navigation">
+					<ul>
+						<li><a href="#">студия</a></li>
+						<li><a href="#">клиенты</a></li>
+						<li><a href="#">магазин</a></li>
+						<li><a href="#">контакты</a></li>
+					</ul>
+				</div>
+				<div class="basket">
+					<a href="#">корзина</a>
+				</div>
+			</div>	
 		</header>
 		<main class="main-container">
+			<div class="slides-container">		
+				<div class="slider">
+					<div class="slider-controls">
+						<i class="active"></i>
+						<i></i>
+						<i></i>
+					</div>
+					<div class="slides">
+						<div class="slide">
+							<div class="slide-text">	
+								<div class="slide-title">Долго, дорого, скрупулезно.</div>		
+								<p class="slide-text">Математически 	выверенный дизайн для вашего сайта или мобильного приложения. </p>	
+								<a 	href="#" class="btn">узнать больше</a>
+							</div>
+						</div>
+						<div class="slide">
+							<div class="slide-text">	
+								<div class="slide-title">Любим математику как никто другой</div>	
+								<p class="slide-text">Никакого креатива, только математические формулы для расчета идеальных пропорций. </p>
+								<a 	href="#" class="btn">узнать больше</a>
+							</div>
+						</div>
+						<div class="slide">
+							<div class="slide-text">	
+								<div class="slide-title">Только ночь, только хардкор</div>		
+								<p class="slide-text">Работать днем, как все? 	Мы против этого. Ближе к полуночи работа только начинается.</p>	
+								<a 	href="#" class="btn">узнать больше</a>
+							</div>
+						</div>	
+					</div>
+				</div>							
+			</div>
 			<div class="features">
 				<div class="features-item web-sites">
 					<div class="features-title">Веб-сайты</div>
@@ -50,12 +77,12 @@
 				<div class="features-item application">
 					<div class="features-title">Приложения</div>
 					<div class="features-description">Покорите топ-10 приложений в AppStore и Google Play</div>
-					<a href="" class="btn">заказать</a>
+					<a href="#" class="btn green">заказать</a>
 				</div>
 				<div class="features-item presentations">
 					<div class="features-title">Презентации</div>
 					<div class="features-description">Вы даже не подозреваете, насколько вы изумительны!</div>
-					<a href="" class="btn">заказать</a>
+					<a href="#" class="btn yellow">заказать</a>
 				</div>
 			</div>
 			<div class="about-us clearfix">

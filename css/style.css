@@ -3,10 +3,10 @@ body {
 	height: auto;
 	margin: 0;
 	padding: 0;
-	font-style: Roboto;
+	font-family: Roboto;
 	font-size: 16px;
 	background-color: #fff;
-	color: black;
+	color: #000;
 }
 * {
 	margin: 0;
@@ -20,21 +20,18 @@ a {
 	display: table;
 	clear: both;
 }
-
 .main-header {
-	background: #eee url("../img/telephones.png") no-repeat 555px 155px;
-	
+	width: auto;
+	background-color: #eee;
+	outline: red solid thin;
 }
 .container {
 	width: 1200px;
-	min-height: 545px;
-	padding: 0 10px;
 	margin: 0 auto;
+	padding: 0 10px;
+	outline: blue solid thin;
 }
-.header-top {
-	width: 1200px;
-	min-height: 100px;
-}
+
 .main-navigation {
 	float: left;
 	margin-left: 185px;
@@ -113,29 +110,77 @@ a {
 	opacity: 0.3;
 }
 
-
-
-.header-left {
-	float: left;
-	width: 545px;
-	margin-top: 80px;
+.slides-container {
+	width: auto;
+	margin: 0;
+	background-color: #eee;
 }
-.header-slogan {
-	font-size: 55px;
+
+.slider {
+	position: relative;
+	width: 1160px;
+	height: 435px;
+	margin: 0 auto;
 }
-.header-text {
-	margin-top: 35px;
+.slider-controls {
+	position: absolute;
+	bottom: 95px;
+	left: 50%;
+	width: 200px;
+	height: 10px;
+	margin-left: -100px;
+	text-align: center;
+	z-index: 1000;
+}
+.slider-controls i {
+	display: inline-block;
+	width: 4px;
+	height: 4px;
+	margin: 0 3px;
+	background-color: white;
+	border: 3px solid white;
+	vertical-align: top;
+	border-radius: 50%;
+	cursor: pointer;
+}
+.slider-controls .active {
+	background: #c1c1c1;
+}
+.slide {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+.slide-text {
+	width: 470px;
+	padding: 60px 0;
+	color: #000;
+}
+.slide-title {
+	font-size: 36px;
+	line-height: 1;
 	font-weight: bold;
+	color: #000;
 }
-.btn {
-	float: left;
+
+.slide .btn {
+	display: block;
+	width: 240px;
+	text-transform: uppercase;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 3px;
 	color: #fff;
-	padding: 10px 30px;
-	margin-top: 35px;
+	padding: 10px 0px;
+	margin-top: 25px;
 	background-color: #fb565a;
+	font-size: 12px;
 	font-weight: bold;
-	opacity: 1;
 }
+
 .btn:hover {
 	background-color: #E74246;
 }
@@ -143,6 +188,27 @@ a {
 .btn:active {
 	background: rgba(215,55,59, 1);
 
+}
+.slide:nth-child(1) {
+	background-image:url("../img/slide-1.png");
+	background-repeat: no-repeat;
+	background-position: 100% 10px;
+}
+.slide {
+	display: none;
+}
+.slide:nth-child(1) {
+	display: block;
+}
+.slide:nth-child(2){
+	background-image: url("../img/slide-2.png");
+	background-repeat: no-repeat;
+	background-position: 100% 10px;
+}
+.slide:nth-child(3){
+	background-image: url("../img/slide-3.png");
+	background-repeat: no-repeat;
+	background-position: 100% 10px;
 }
 
 .main-container {
@@ -162,17 +228,37 @@ a {
 	width: 305px;
 	margin-right: 130px;
 }
+
 .features-item:last-child {
 	margin-right: 0px;
 }
+.features-item .btn {
+	display: block;
+	width: 160px;
+	text-transform: uppercase;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 3px;
+	color: #fff;
+	padding: 10px 0px;
+	margin-top: 25px;
+	background-color: #fb565a;
+	font-size: 12px;
+	font-weight: bold;
+}
+.features-item .green{
+ 	background-color: #00CA74;
+ }
+ .presentations .yellow {
+ 	background-color: #EFC84A;
+ }
 .features-title {
-	margin-top: 150px;
+	margin-top: 170px;
 	font-size: 24px;
 	line-height: 30px;
 	text-transform: uppercase;
 }
 .features-description {
-	width: 220px;
 	margin-top: 20px;
 	font-size: 16px;
 	line-height: 24px;
@@ -200,7 +286,6 @@ a {
 }
 .presentations {
 	background: url("../img/presentations.png") no-repeat 50% 0;
-
 }
 .presentations a {
 	background-color: #efc849;
@@ -344,8 +429,19 @@ img {
 
 }
 .contacts-information .btn {
-	margin-left: 50px;
-	margin-bottom: 35px;
+	display: block;
+	width: 220px;
+	text-transform: uppercase;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 3px;
+	color: #fff;
+	padding: 10px 0px;
+	margin: 25px 0 35px 50px;
+	background-color: #fb565a;
+	font-size: 12px;
+	font-weight: bold;
+	
 }
 .map-marker {
 	position: absolute;
