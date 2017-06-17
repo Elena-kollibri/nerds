@@ -548,4 +548,115 @@ img {
 	color: #444444;
 	margin-top: 8px;
 }
+.modal-content {
+	display: none;
+	position: absolute;
+	bottom: 65px;
+	left: 50%;
+	margin-left: -435px;
+	width: 760px;
+	padding: 80px 100px;
+	color: #000;
+	background: #fff;
+	box-shadow: 5px -2px 30px 10px rgba(0,0,0, 0.2),
+				-5px 5px 30px 10px rgba(0,0,0, 0.2);
+}
+.modal-content-close {
+	position: absolute;
+	top: 87px;
+	right:99px;
+	width: 22px;
+	height: 22px;
+	font-size: 0;
+	background-color: #fff;
+	border: 0;
+	cursor: pointer;
+}
+.modal-content-close::before,
+.modal-content-close::after {
+	content: "";
+	position: absolute;
+	width: 24px;
+	height: 3px;
+	background-color: rgba(251,86,90,0.3);
+	border-radius: 1px;
+}
 
+.modal-content-close::before {
+	transform: rotate(45deg);
+}
+.modal-content-close::after {
+	transform: rotate(-45deg);
+}
+.modal-content-title {
+	width: 770px;
+	padding-bottom: 0px;
+	font-size: 45px;
+	line-height: 45px;
+	letter-spacing: 5px;
+}
+.user-field {
+	display: inline-block;
+	width: 100px;
+	padding: 35px 0px;
+	margin-right: 50px;
+
+}
+.user-field label {
+	display: inline-block;
+	height: 30px;
+	width: 360px;
+}
+.user-field input {
+	padding: 15px;
+	width: 330px;
+	border: 1px solid #D7DCDE;
+	border-radius: 3px;
+}
+.email-field {
+	display: inline-block;
+	width: 100px;
+	margin-left: 245px;
+	padding: 20px 0px;
+}
+.email-field label {
+	display: inline-block;
+	height: 25px;
+	width: 360px;
+}
+.email-field input {
+	padding: 13px 0px 18px 10px;
+	width: 330px;
+	border: 1px solid #D7DCDE;
+	border-radius: 3px;
+}
+.message-field {
+	height: 40px;
+}
+.message-field label{
+	display: inline-block;
+	height: 20px;
+	width: 760px;
+}
+.message-field textarea {
+	display: inline-block;
+	width: 750px;
+	height: 120px;
+}
+
+.submit {
+	display: block;
+	width: 260px;
+	text-transform: uppercase;
+	text-align: center;
+	text-decoration: none;
+	border: none;
+	border-radius: 3px;
+	color: #fff;
+	padding: 15px 0px;
+	margin: 125px 0px 0px 0px;
+	background-color: #fb565a;
+	font-size: 16px;
+	line-height: 18px;
+	font-weight: bold;
+}
