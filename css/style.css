@@ -23,18 +23,16 @@ a {
 .main-header {
 	width: auto;
 	background-color: #eee;
-	outline: red solid thin;
 }
 .container {
-	width: 1200px;
+	width: 1160px;
 	margin: 0 auto;
-	padding: 0 10px;
-	outline: blue solid thin;
+	padding: 20px 0px 0px 50px;
 }
 
 .main-navigation {
 	float: left;
-	margin-left: 185px;
+	margin-left: 175px;
 	margin-top: 50px;
 }
 .main-navigation ul {
@@ -45,6 +43,7 @@ a {
 	float: left;
 	padding: 10px 25px;
 	text-align: center;
+	vertical-align: middle;
 	text-transform: uppercase;
 	font-weight: bold;
 
@@ -52,11 +51,14 @@ a {
 .main-navigation a {
 	color: black; 
 } 
+ul .active {
+	border-bottom: #FB565A;
+}
 .basket {
 	float: right;
 	min-width: 105px;
-	margin-top: 40px;
-	padding: 10px 0 10px 20px;
+	margin-top: 35px;
+	padding: 10px 0 10px 40px;
 }
 
 .basket a {
@@ -65,13 +67,15 @@ a {
 	padding: 10px 10px 10px 40px;
 	color: black; 
 	text-transform: uppercase;
+	font-size: 16px;
+	line-height: 30px;
 	font-weight: bold;
 }
 
 .basket a::before {
 	content: "";
 	position: absolute;
-	top: 11px;
+	top: 15px;
 	left: 15px;
 	width: 15px;
     height: 15px;
@@ -102,6 +106,7 @@ a {
 .logo {
 	float: left;
 	margin-top: 15px;
+	margin-left: 10px;
 }
 .logo:hover {
 	opacity: 0.8;
@@ -113,13 +118,14 @@ a {
 .slides-container {
 	width: auto;
 	margin: 0;
+	padding-top: 10px;
 	background-color: #eee;
 }
 
 .slider {
 	position: relative;
-	width: 1160px;
-	height: 435px;
+	width: 1185px;
+	height: 405px;
 	margin: 0 auto;
 }
 .slider-controls {
@@ -155,12 +161,18 @@ a {
 	overflow: hidden;
 }
 .slide-text {
-	width: 470px;
-	padding: 60px 0;
+	width: 440px;
 	color: #000;
 }
+.slide-text p {
+	font-size: 16px;
+	line-height: 24px;
+	padding: 25px 0px 10px 55px;
+
+}
 .slide-title {
-	font-size: 36px;
+	font-size: 55px;
+	padding: 45px 0px 0px 55px;
 	line-height: 1;
 	font-weight: bold;
 	color: #000;
@@ -174,10 +186,12 @@ a {
 	text-decoration: none;
 	border-radius: 3px;
 	color: #fff;
-	padding: 10px 0px;
-	margin-top: 25px;
+	padding: 15px 0px;
+	margin-top: 30px;
+	margin-left: 55px;
 	background-color: #fb565a;
-	font-size: 12px;
+	font-size: 16px;
+	line-height: 18px;
 	font-weight: bold;
 }
 
@@ -192,7 +206,7 @@ a {
 .slide:nth-child(1) {
 	background-image:url("../img/slide-1.png");
 	background-repeat: no-repeat;
-	background-position: 100% 10px;
+	background-position: 485px -10px;
 }
 .slide {
 	display: none;
@@ -212,25 +226,28 @@ a {
 }
 
 .main-container {
-	width: 1200px;
+	width: auto;
 	margin: 0 auto;
-	padding: 1px 10px 0px;
+}
+.main-wrapper {
+	width: 1200px;
+	margin: 75px auto 50px;
+	padding-left: 125px;
 }
 .features {
-	width: 1200px;
-	margin: 85px auto 0px;
 	padding-bottom: 85px;
 	border-bottom: 1px solid #eeeeee;
 
 }
 .features-item {
 	display: inline-block;
-	width: 305px;
-	margin-right: 130px;
+	width: 300px;
+	margin-right: 95px;
 }
 
 .features-item:last-child {
 	margin-right: 0px;
+	padding-left: 10px;
 }
 .features-item .btn {
 	display: block;
@@ -240,17 +257,22 @@ a {
 	text-decoration: none;
 	border-radius: 3px;
 	color: #fff;
-	padding: 10px 0px;
-	margin-top: 25px;
+	padding: 15px 0px;
+	margin-top: 35px;
+	margin-left: 5px;
 	background-color: #fb565a;
-	font-size: 12px;
+	font-size: 16px;
+	line-height: 18px;
 	font-weight: bold;
 }
 .features-item .green{
  	background-color: #00CA74;
+ 	margin-left: 0px;
+
  }
  .presentations .yellow {
  	background-color: #EFC84A;
+ 	margin-left: -5px;
  }
 .features-title {
 	margin-top: 170px;
@@ -259,7 +281,7 @@ a {
 	text-transform: uppercase;
 }
 .features-description {
-	margin-top: 20px;
+	margin-top: 15px;
 	font-size: 16px;
 	line-height: 24px;
 }
@@ -298,24 +320,26 @@ a {
 }
 .about-us {
 	width: 1200px;
-	margin: 80px auto 0;
-	padding-bottom: 80px;
+	margin: 20px auto 0;
+	padding-bottom: 55px;
 }
 .about-us-left {
-	float: left;
-	width: 630px;
+	display: inline-block;
+	width: 610px;
+	padding-top: 50px;
+	padding-left: 0px;
 }
 
 .about-us-title {
 	float: left;
-	width: 600px;
+	width: 670px;
 	font-size: 45px;
 	line-height: 45px;
 }
 .about-us-description {
 	float: left;
 	width: 600px;
-	margin-top: 35px;
+	margin-top: 24px;
 	font-size: 16px;
 	line-height: 24px;
 	color: #283136;
@@ -324,35 +348,40 @@ a {
 .about-us-subtitle {
 	float: left;
 	width: 550px;
-	margin-top: 35px;
+	margin-top: 27px;
+	font-size: 16px;
+	line-height:  24px;
 	
 }
 .about-us-subtitle ul {
 	list-style-type: none;
 	margin: 0;
-	padding: 10px;
+	padding: 10px 0px;
 }	
 .about-us-subtitle li {
 	float: left;
 	font-size: 16px;
 	line-height: 24px;
-	margin-right: 30px;
-	padding: 10px;
+	padding: 13px 0px;
 }
 .about-us-subtitle ul>li:before {
 	content: "──";
 	color: red;
-	padding-right: 10px;
+	padding-right: 20px;
 
 }
 
 .about-us-right {
-	float: right;
-	width: 450px;
+	display: inline-block;
+	width: 360px;
+	margin-left: 190px;
+	margin-top: 6px;
+	vertical-align: top;
 }
 img {
-	display: inline-block;
+	margin-bottom: 20px;
 }
+
 .statistics-block {
 	float: left;
 }
@@ -360,33 +389,44 @@ img {
 	font-size: 16px;
 	text-transform: uppercase;
 	text-align: center;
-	padding: 10px;
+	padding: 15px 10px 40px 10px;
 }
 .percent {
+	display: inline-block;
 	font-size: 45px;
+	padding-top: 10px;
 	text-align: center;
 
 }
+.percent td {
+	width: 100px;
+}
 .criterion {
+	display: inline-block;
 	font-size: 16px;
+	line-height: 18px;
 	text-align: center;
+}
+.criterion td {
+	text-align: left;
+	padding-top: 10px;
+	padding-right: 10px;
+	width: 100px;
 }
 .brands-list {
 	display: inline-block;
-	width: 1200px;
-	font-size: 0px;
-	margin: 0;
 	border-top: 1px solid #eee;
 	border-bottom: 1px solid #eee;
-
 }
 .brands-list img {
 	opacity: 0.2;
-	font-size: 16px;
 	text-align: center;
 	margin: 50px auto;
-	padding: 0px 45px;
+	padding: 0px 40px;
 	border-right: 1px solid #000;
+}
+.brands-list img:last-child {
+	padding-left: 55px;
 }
 .brands-list img:hover {
 	opacity: 1;
@@ -407,24 +447,24 @@ img {
 	width: 300px;
 	background-color: #fff;
 	top: 50px;
-	left: 132px;
+	left: 137px;
 }
 .contacts-title {
 	float: left;
 	font-size: 18px;
 	text-align: center;
-	margin: 45px 0px 0 50px;
+	margin: 60px 0px 0 54px;
 }
 .contacts-adress {
 	float: left;
-	width: 185px;
-	margin: 35px 85px 0 50px;
+	width: 205px;
+	margin: 25px 85px 0 54px;
 	color: #666;
 }
 
 .contacts-telephone {
 	display: inline-block;
-	margin: 20px 0 0 50px;
+	margin: 20px 0 0 54px;
 	color: #666;
 
 }
@@ -436,29 +476,38 @@ img {
 	text-decoration: none;
 	border-radius: 3px;
 	color: #fff;
-	padding: 10px 0px;
-	margin: 25px 0 35px 50px;
+	padding: 15px 0px;
+	margin: 38px 0 35px 54px;
 	background-color: #fb565a;
-	font-size: 12px;
+	font-size: 16px;
+	line-height: 18px;
 	font-weight: bold;
 	
+}
+.contacts-information .btn:hover {
+	background-color: #E74246;
+}
+.contacts-information .btn:active {
+	background-color: #D7373B;
+	opacity: 0.3;
 }
 .map-marker {
 	position: absolute;
 	float: right;
-	top: 85px;
-	right: 360px;
+	top: 88px;
+	right: 300px;
 }
 .footer-social {
 	display: inline-block;
 	margin-top: 60px;
-	margin-left: 140px;
+	margin-left: 135px;
 }
 .social-btn {
 	display: inline-block;
-	width: 60px;
-	height: 60px;
+	width: 75px;
+	height: 75px;
 	margin-right: 15px;
+	margin-top: -55px;
 	border-radius: 50%; 
 	vertical-align: middle;
 	background-color: #E1E1E1;
@@ -468,27 +517,28 @@ img {
 }
 .social-btn:active {
 	background-color: #D7373B;
+	opacity: 0.3;
 }
 .social-btn-vkontakte {
 	background-image: url("../img/spritesheet.png");
 	background-repeat: no-repeat;
-	background-position: -214px -2px;
+	background-position: -207px 5px;
 }
 .social-btn-facebook {
 	background-image: url("../img/spritesheet.png");
 	background-repeat: no-repeat;
-	background-position: -70px -8px;
+	background-position: -63px -1px;
 
 }
 .social-btn-instagram {
 	background-image: url("../img/spritesheet.png");
 	background-repeat: no-repeat;
-	background-position: -137px -6px;
+	background-position: -130px 3px;
 }
 .footer-slogan {
 	display: inline-block;
-	margin-left: 145px;
-	margin-top: 40px;
+	margin-left: 125px;
+	margin-top: 52px;
 }
 .footer-title {
 	font-size: 36px;
@@ -496,5 +546,6 @@ img {
 .footer-text {
 	font-size: 16px;
 	color: #444444;
+	margin-top: 8px;
 }
 

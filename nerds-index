@@ -47,7 +47,7 @@
 						<div class="slide">
 							<div class="slide-text">	
 								<div class="slide-title">Долго, дорого, скрупулезно.</div>		
-								<p class="slide-text">Математически 	выверенный дизайн для вашего сайта или мобильного приложения. </p>	
+								<p>Математически 	выверенный дизайн <br>для вашего сайта или мобильного приложения. </p>	
 								<a 	href="#" class="btn">узнать больше</a>
 							</div>
 						</div>
@@ -68,63 +68,65 @@
 					</div>
 				</div>							
 			</div>
-			<div class="features">
-				<div class="features-item web-sites">
-					<div class="features-title">Веб-сайты</div>
-					<div class="features-description">Мир никогда не будет прежним после того как увидит ваш сайт!</div>
-					<a href="#" class="btn">заказать</a>
+			<div class="main-wrapper">
+				<div class="features">
+					<div class="features-item web-sites">
+						<div class="features-title">Веб-сайты</div>
+						<div class="features-description">Мир никогда не будет прежним после того как увидит ваш сайт!</div>
+						<a href="#" class="btn">заказать</a>
+					</div>
+					<div class="features-item application">
+						<div class="features-title">Приложения</div>
+						<div class="features-description">Покорите топ-10 приложений в AppStore и Google Play</div>
+						<a href="#" class="btn green">заказать</a>
+					</div>
+					<div class="features-item presentations">
+						<div class="features-title">Презентации</div>
+						<div class="features-description">Вы даже не подозреваете, насколько вы изумительны!</div>
+						<a href="#" class="btn yellow">заказать</a>
+					</div>
 				</div>
-				<div class="features-item application">
-					<div class="features-title">Приложения</div>
-					<div class="features-description">Покорите топ-10 приложений в AppStore и Google Play</div>
-					<a href="#" class="btn green">заказать</a>
-				</div>
-				<div class="features-item presentations">
-					<div class="features-title">Презентации</div>
-					<div class="features-description">Вы даже не подозреваете, насколько вы изумительны!</div>
-					<a href="#" class="btn yellow">заказать</a>
-				</div>
-			</div>
-			<div class="about-us clearfix">
-				<div class="about-us-left">
-					<p class="about-us-title">Мы — маленькая, но гордая 	дизайн-студия из Краснодара.</p>	
-					<p class="about-us-description">Исповедуем принципы 	минимализма и чистоты. Ставим математический расчет	превыше креатива. Работаем не покладая рук, как роботы.</p>	
-					<div class="about-us-subtitle"> Выполняем заказы на 	разработку: 	
-						<ul> 	
-							<li>Веб-сайтов любой сложности</li> 	
-							<li>Мобильных приложений для iOS и Android</li>
-							<li>Слайдшоу и видео для корпоративных 		презентаций</li>	
-						</ul>	
+				<div class="about-us clearfix">
+					<div class="about-us-left">
+						<p class="about-us-title">Мы — маленькая, но гордая 	дизайн-студия из Краснодара.</p>	
+						<p class="about-us-description">Исповедуем принципы 	минимализма и чистоты. Ставим математический расчет	превыше креатива. Работаем не покладая рук, как роботы.</p>	
+						<div class="about-us-subtitle"> ВЫПОЛНЯЕМ ЗАКАЗЫ НА РАЗРАБОТКУ: 	
+							<ul class="clearfix"> 	
+								<li>Веб-сайтов любой сложности</li> 	
+								<li>Мобильных приложений для iOS и Android</li>
+								<li>Слайдшоу и видео для корпоративных 	презентаций</li>	
+							</ul>	
+						</div>
+					</div>	
+					<div class="about-us-right"> 
+						<img src="img/color-logo.png" width="360" height="208" alt="nerds">
+						<div class="statistics-block">
+							<h3 class="statistics-block-title">с 2004 года любим 	точность во всем:</h3>
+								<table> 
+									<tr class="percent">
+										<td>146%</td>
+										<td>100%</td>
+										<td>50%</td>
+									</tr>
+									<tr class="criterion">
+										<td>Уровень самоотдачи</td>
+										<td>Соблюдение сроков</td>
+										<td>Минимальная предоплата</td>
+									</tr>
+								</table>
+						</div>
 					</div>
 				</div>	
-				<div class="about-us-right"> 
-					<img src="img/color-logo.png" width="440" height="230" alt="nerds">
-					<div class="statistics-block">
-						<h3 class="statistics-block-title">с 2004 года любим 	точность во всем:</h3>
-							<table> 
-								<tr class="percent">
-									<td>146%</td>
-									<td>100%</td>
-									<td>50%</td>
-								</tr>
-								<tr class="criterion">
-									<td>Уровень самоотдачи</td>
-									<td>Соблюдение сроков</td>
-									<td>Минимальная предоплата</td>
-								</tr>
-							</table>
-					</div>
+				<div class="brands-list">
+					<img src="img/htmlacademy-logo.png" width="209" height="70" alt="htmlacademy">
+					<img src="img/borodinski-logo.png" width="209" height="70" alt="barbershop-borodinski">
+					<img src="img/pink-logo.png" width="209" height="70" alt="pink">
+					<img src="img/mishka-logo.png" width="209" height="70" alt="mishka">
 				</div>
-			</div>	
-			<div class="brands-list">
-				<img src="img/htmlacademy-logo.png" width="209" height="70" alt="htmlacademy">
-				<img src="img/borodinski-logo.png" width="209" height="70" alt="barbershop-borodinski">
-				<img src="img/pink-logo.png" width="209" height="70" alt="pink">
-				<img src="img/mishka-logo.png" width="209" height="70" alt="mishka">
 			</div>
 		</main>
 		<footer class="footer-container clearfix">
-			<img src="img/map.png" width="100%" alt="map">
+			<img src="img/map.png" width="100%" height="415" alt="map">
 			<div class="contacts-information">
 				<div class="contacts-title">NЁRDS DESIGN STUDIO</div>
 				<div class="contacts-adress">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</div>
