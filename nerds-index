@@ -10,7 +10,7 @@
 				url("fonts/web/roboto-woff");
 			}
 			h1 {
-				font-family: Roboto;
+				font-family : Roboto;
 			}
 		</style>
 	    <link href="css/normalize.css" rel="stylesheet">
