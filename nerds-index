@@ -48,21 +48,21 @@
 							<div class="slide-text">	
 								<div class="slide-title">Долго, дорого, скрупулезно.</div>		
 								<p>Математически 	выверенный дизайн <br>для вашего сайта или мобильного приложения. </p>	
-								<a 	href="#" class="btn">узнать больше</a>
+								<a 	href="#" class="btn"><span>узнать больше</span></a>
 							</div>
 						</div>
 						<div class="slide">
 							<div class="slide-text">	
 								<div class="slide-title">Любим математику как никто другой</div>	
 								<p class="slide-text">Никакого креатива, только математические формулы для расчета идеальных пропорций. </p>
-								<a 	href="#" class="btn">узнать больше</a>
+								<a 	href="#" class="btn"><span>узнать больше</span></a>
 							</div>
 						</div>
 						<div class="slide">
 							<div class="slide-text">	
 								<div class="slide-title">Только ночь, только хардкор</div>		
 								<p class="slide-text">Работать днем, как все? 	Мы против этого. Ближе к полуночи работа только начинается.</p>	
-								<a 	href="#" class="btn">узнать больше</a>
+								<a 	href="#" class="btn"><span>узнать больше</span></a>
 							</div>
 						</div>	
 					</div>
@@ -73,17 +73,17 @@
 					<div class="features-item web-sites">
 						<div class="features-title">Веб-сайты</div>
 						<div class="features-description">Мир никогда не будет прежним после того как увидит ваш сайт!</div>
-						<a href="#" class="btn">заказать</a>
+						<a href="#" class="btn"><span>заказать</span></a>
 					</div>
 					<div class="features-item application">
 						<div class="features-title">Приложения</div>
 						<div class="features-description">Покорите топ-10 приложений в AppStore и Google Play</div>
-						<a href="#" class="btn green">заказать</a>
+						<a href="#" class="btn green"><span>заказать</span></a>
 					</div>
 					<div class="features-item presentations">
 						<div class="features-title">Презентации</div>
 						<div class="features-description">Вы даже не подозреваете, насколько вы изумительны!</div>
-						<a href="#" class="btn yellow">заказать</a>
+						<a href="#" class="btn yellow"><span>заказать</span></a>
 					</div>
 				</div>
 				<div class="about-us clearfix">
@@ -118,10 +118,18 @@
 					</div>
 				</div>	
 				<div class="brands-list">
-					<img src="img/htmlacademy-logo.png" width="209" height="70" alt="htmlacademy">
-					<img src="img/borodinski-logo.png" width="209" height="70" alt="barbershop-borodinski">
-					<img src="img/pink-logo.png" width="209" height="70" alt="pink">
-					<img src="img/mishka-logo.png" width="209" height="70" alt="mishka">
+					<div class="htmlacademy-wrapper">
+						<img src="img/htmlacademy-logo.png" width="209" height="70" alt="htmlacademy">
+					</div>
+					<div class="borodinski-wrapper">
+						<img src="img/borodinski-logo.png" width="209" height="70" alt="barbershop-borodinski">
+					</div>
+					<div class="pink-wrapper">
+						<img src="img/pink-logo.png" width="209" height="70" alt="pink">
+					</div>
+					<div class="mishka-wrapper">
+						<img src="img/mishka-logo.png" width="209" height="70" alt="mishka">
+					</div>
 				</div>
 			</div>
 		</main>
@@ -135,9 +143,9 @@
 			</div>
 			<img src="img/map-marker.png" alt="nerds" class="map-marker">
 			<div class="footer-social">
-				<a href="#" class="social-btn social-btn-vkontakte"></a>
-				<a href="#" class="social-btn social-btn-facebook"></a>
-				<a href="#" class="social-btn social-btn-instagram"></a>
+				<a href="#" class="social-btn social-btn-vkontakte">vkontakte</a>
+				<a href="#" class="social-btn social-btn-facebook">facebook</a>
+				<a href="#" class="social-btn social-btn-instagram">instagram</a>
 			</div>	
 			<div class="footer-slogan">
 				<div class="footer-title">Давайте дружить, это выгодно!</div>

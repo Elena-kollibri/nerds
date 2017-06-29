@@ -24,7 +24,7 @@
 					<ul>
 						<li><a href="#">студия</a></li>
 						<li><a href="#">клиенты</a></li>
-						<li><a href="#">магазин</a></li>
+						<li><a href="#" class="active">магазин</a></li>
 						<li><a href="#">контакты</a></li>
 					</ul>
 				</div>
@@ -53,34 +53,34 @@
 						<h2 class="inner-grid">сетка</h2>
                 		<fieldset>
                 	    	<label>
-                	        	<input type="radio" name="supply" value="adaptive" checked>адаптивная   
+                	        	<input type="radio" name="supply" value="adaptive" checked><span>Aдаптивная</span>   
                     		</label>
                      		<label>
-                        		<input type="radio" name="supply" value="fixed"> фиксированная
+                        		<input type="radio" name="supply" value="fixed"><span>Фиксированная</span>
                     		</label>
                     		<label>
-                        		<input type="radio" name="supply" value="rubber">резиновая
+                        		<input type="radio" name="supply" value="rubber"><span>Резиновая</span>
                     		</label>    
                 		</fieldset>
                 		<h2 class="inner-features">особенности</h2>
-                		<fieldset>
-                    		<label>
-                    	   		<input type="checkbox" checked>слайдер
+                		<fieldset class="inner-features-block">
+                    		<label class="checkbox-field">
+                    	   		<input type="checkbox" checked><span>Слайдер</span>
                     		</label>
-                   			<label>
-                    	   		<input type="checkbox">блок преимуществ
+                   			<label class="checkbox-on-field">
+                    	   		<input type="checkbox"><span>Блок преимуществ</span>
                    			</label>
-                   			<label>
-                    	   		<input type="checkbox" checked>новости
+                   			<label class="checkbox-field">
+                    	   		<input type="checkbox" checked><span>Новости</span>
                    			</label>
-                   			<label>
-                   				<input type="checkbox">галерея
+                   			<label class="checkbox-on-field">
+                   				<input type="checkbox"><span>Галерея</span>
                    			</label>
-                   			<label>
-                    	   		<input type="checkbox">корзина
+                   			<label class="checkbox-on-field">
+                    	   		<input type="checkbox"><span>Корзина</span>
                    			</label>
                			</fieldset>
-               			<button type="submit" class="submit">показать</button>
+               			<button type="submit" class="inner-submit">показать</button>
             		</form>
             	</div>		
             	<div class="inner-main-right">
@@ -90,8 +90,8 @@
             		        <a href="#">По цене</a>
             		        <a href="#">По типу</a>
             		        <a href="#">По названию</a>
-            		        <a href="#" class="up"></a>
-            		        <a href="#" class="down"></a>
+            		        <a href="#" class="down">вниз</a>
+            		        <a href="#" class="up">вверх</a>
             		    </div>    
             		</div>
             		<div class="templates">
@@ -157,7 +157,7 @@
             			</div>
             		</div>
             		<div class="paginator">
-            		    <a href="#1" class="first">1</a>
+            		    <a href="#1" class="active">1</a>
             		    <a href="#2">2</a>
             		    <a href="#3">3</a>
             		    <a href="#next" class="next">Следующая</a>
