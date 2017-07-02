@@ -27,7 +27,7 @@ body {
 .main-navigation {
 	float: left;
 	margin-left: 175px;
-	margin-top: 50px;
+	margin-top: 30px;
 }
 .main-navigation ul {
 	padding: 0;
@@ -53,8 +53,7 @@ ul .active {
 .basket {
 	float: right;
 	min-width: 105px;
-	margin-top: 35px;
-	padding: 25px 0 0 0;
+	margin-top: 45px;
 }
 
 .basket a {
@@ -609,12 +608,12 @@ input[type="radio"] {
 .slide-text p {
 	font-size: 16px;
 	line-height: 24px;
-	padding: 25px 0px 10px 55px;
+	padding: 13px 0px 10px 55px;
 
 }
 .slide-title {
 	font-size: 55px;
-	padding: 45px 0px 0px 55px;
+	padding: 65px 0px 0px 55px;
 	line-height: 1;
 	font-weight: bold;
 	color: #000;
@@ -652,7 +651,7 @@ input[type="radio"] {
 .slide:nth-child(1) {
 	background-image:url("../img/slide-1.png");
 	background-repeat: no-repeat;
-	background-position: 485px -10px;
+	background-position: 490px 7px;
 }
 .slide {
 	display: none;
@@ -677,7 +676,7 @@ input[type="radio"] {
 }
 .main-wrapper {
 	width: 1200px;
-	margin: 75px auto 50px;
+	margin: 95px auto 50px;
 	padding-left: 125px;
 }
 .features {
@@ -776,35 +775,34 @@ input[type="radio"] {
 }
 .about-us {
 	width: 1200px;
-	margin: 20px auto 0;
+	margin: 0 auto;
 	padding-bottom: 55px;
 }
 .about-us-left {
 	display: inline-block;
 	width: 610px;
-	padding-top: 50px;
-	padding-left: 0px;
+	padding-top: 30px;
+	
 }
 
 .about-us-title {
 	float: left;
 	width: 670px;
 	font-size: 45px;
-	line-height: 45px;
+	line-height: 35px;
 }
-.about-us-description {
+.about-us-left .about-us-description {
 	float: left;
-	width: 600px;
-	margin-top: 24px;
+	width: 650px;
 	font-size: 16px;
 	line-height: 24px;
 	color: #283136;
-	padding: 10px 10px 10px 0;
+	margin-top: 0;
 }
 .about-us-subtitle {
 	float: left;
 	width: 550px;
-	margin-top: 27px;
+	margin-top: 25px;
 	font-size: 16px;
 	line-height:  24px;
 	
@@ -834,7 +832,12 @@ input[type="radio"] {
 	margin-top: 6px;
 	vertical-align: top;
 }
-
+.about-us-right-logo {
+	display: inline-block;
+	float: right;
+	padding: 30px 0;
+	outline: red solid thin;
+}
 
 .statistics-block {
 	float: left;
@@ -843,7 +846,7 @@ input[type="radio"] {
 	font-size: 16px;
 	text-transform: uppercase;
 	text-align: center;
-	padding: 15px 10px 40px 10px;
+	padding: 0 10px;
 }
 .percent {
 	display: inline-block;
@@ -1094,11 +1097,12 @@ input[type="radio"] {
 .modal-content {
 	display: none;
 	position: absolute;
-	bottom: 65px;
+	bottom: 75px;
 	left: 50%;
 	margin-left: -435px;
 	width: 760px;
-	padding: 80px 100px;
+	height: 590px;
+	padding: 10px 100px;
 	color: #000;
 	background: #fff;
 	-webkit-box-shadow: 5px -2px 30px 10px rgba(0,0,0, 0.2),
@@ -1108,8 +1112,8 @@ input[type="radio"] {
 }
 .modal-content-close {
 	position: absolute;
-	top: 87px;
-	right:99px;
+	top: 77px;
+	right:102px;
 	width: 22px;
 	height: 22px;
 	font-size: 0;
@@ -1117,6 +1121,9 @@ input[type="radio"] {
 	border: 0;
 	cursor: pointer;
 }
+.contacts-information .btn:active .modal-content{
+	display: block;
+} 
 .modal-content-close::before,
 .modal-content-close::after {
 	content: "";
@@ -1137,61 +1144,73 @@ input[type="radio"] {
 }
 .modal-content-title {
 	width: 770px;
-	padding-bottom: 0px;
+	padding-bottom: 10px;
+	padding-top: 60px;
 	font-size: 45px;
 	line-height: 45px;
 	letter-spacing: 5px;
 }
+.forms-field {
+	display: inline-block;
+	width: 800px;
+}
 .user-field {
 	display: inline-block;
-	width: 100px;
-	padding: 35px 0px;
-	margin-right: 50px;
-
+	width: 360px;
+	vertical-align: top;
 }
-.user-field label {
+.user-field .user-field-id {
 	display: inline-block;
 	height: 30px;
-	width: 360px;
+	padding: 25px 0 0 0;
 }
-.user-field input {
+.user-field .input-user-fiield-id {
 	padding: 15px;
-	width: 330px;
-	border: 1px solid #D7DCDE;
+	min-width: 328px;
 	border-radius: 3px;
+	border: 1px solid #D7DCDE;
+
 }
 .email-field {
 	display: inline-block;
-	width: 100px;
-	margin-left: 245px;
-	padding: 20px 0px;
-}
-.email-field label {
-	display: inline-block;
-	height: 25px;
 	width: 360px;
+	margin-left: 35px;
+	vertical-align: top;
+
 }
-.email-field input {
-	padding: 13px 0px 18px 10px;
-	width: 330px;
+.email-field .email-field-id {
+	display: inline-block;
+	height: 30px;
+	width: 360px;
+	padding: 25px 0 0 0;
+}
+.email-field .input-email-field-id {
+	padding: 15px;
+	width: 328px;
 	border: 1px solid #D7DCDE;
 	border-radius: 3px;
 }
 .message-field {
+	display: inline-block;
 	height: 40px;
+	margin-top: 30px;
+
 }
-.message-field label{
+.message-field .label-text-field{
 	display: inline-block;
 	height: 20px;
 	width: 760px;
+	padding: 0;
 }
-.message-field textarea {
+.message-field .text-field {
 	display: inline-block;
-	width: 750px;
-	height: 120px;
+	width: 760px;
+	min-height: 120px;
+	font-size: 0;
+	margin-bottom: 40px;
 }
 
-.modal-content input [type="submit"] {
+.modal-content .submit {
 	display: block;
 	width: 260px;
 	text-transform: uppercase;
@@ -1201,7 +1220,7 @@ input[type="radio"] {
 	border-radius: 3px;
 	color: #fff;
 	padding: 15px 0px;
-	margin: 125px 0px 0px 0px;
+	margin: 0px 0px 25px 0px;
 	background-color: #fb565a;
 	font-size: 16px;
 	line-height: 18px;

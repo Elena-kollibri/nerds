@@ -99,7 +99,7 @@
 						</div>
 					</div>	
 					<div class="about-us-right"> 
-						<img src="img/color-logo.png" width="360" height="208" alt="nerds">
+						<img src="img/color-logo.png" width="360" height="208" alt="nerds" class="about-us-right-logo">
 						<div class="statistics-block">
 							<h3 class="statistics-block-title">с 2004 года любим 	точность во всем:</h3>
 								<table> 
@@ -154,17 +154,19 @@
 			<div class="modal-content">
 				<button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
 				<div class="modal-content-title">Напишите нам</div>
-				<div class="user-field">
-					<label for="user-field-id">Ваше имя:</label>
-						<input id="user-fiield-id" type="username" placeholder="Представьтесь, пожалуйста">
-				</div>	
-				<div class="email-field">
-					<label for="email-field-id">Ваш e-mail:</label>
-						<input id="email-field-id" type="email" placeholder="Для отправки ответа">
-				</div>
-				<div class="message-field">
-					<label for="text-field">Текст письма:</label>
-					<textarea name="letter-text" id="text-field" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+				<div class="forms-field">
+					<div class="user-field">
+						<label for="user-field-id" class="user-field-id">Ваше имя:</label>
+							<input id="user-fiield-id" class="input-user-fiield-id" type="username" placeholder="Представьтесь, пожалуйста">
+					</div>	
+					<div class="email-field">
+						<label for="email-field-id" class="email-field-id">Ваш e-mail:</label>
+							<input id="input-email-field-id" class="input-email-field-id" type="email" placeholder="Для отправки ответа">
+					</div>
+					<div class="message-field">
+						<label for="label-text-field" class="label-text-field">Текст письма:</label>
+						<textarea name="letter-text" id="text-field" class="text-field" cols="30" rows="10" placeholder="В свободной форме">поле для ввода текста</textarea>
+					</div>
 				</div>
 				<input type="submit" value="отправить" class="submit">	
 			</div>
