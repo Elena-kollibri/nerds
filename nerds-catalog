@@ -19,12 +19,12 @@
 	<body>
 		<header class="main-header clearfix">
 			<div class="container clearfix">
-				<div class="logo">
-					<img src="img/nerds-logo.png" alt="nerds">
+				<div class="inner-logo">
+					<img src="img/nerds-logo.png" width="160" height="65" alt="nerds">
 				</div>	
 				<div class="main-navigation">
 					<ul>
-						<li><a href="#">студия</a></li>
+						<li><a href="nerds-index">студия</a></li>
 						<li><a href="#">клиенты</a></li>
 						<li><a href="#" class="active">магазин</a></li>
 						<li><a href="#">контакты</a></li>
@@ -99,7 +99,7 @@
             		<div class="templates">
             			<div class="templates-block">
 							<div class="templates-example">
-            					<img src="img/sedona.jpg" alt="sedona">
+            					<img src="img/sedona.jpg" width="360" height="617" alt="sedona">
             				</div>
             				<div class="templates-hover">
             					<h3>Sedona</h3>
@@ -109,7 +109,7 @@
             			</div>
             			<div class="templates-block">
             				<div class="templates-example">	
-            					<img src="img/pink.jpg" alt="pink">
+            					<img src="img/pink.jpg" width="360" height="617" alt="pink">
             				</div>
             				<div class="templates-hover">
             					<h3>Pink App</h3>
@@ -119,7 +119,7 @@
             			</div>
             			<div class="templates-block">
             				<div class="templates-example">				
-            					<img src="img/barbershop.jpg" alt="borodinski">
+            					<img src="img/barbershop.jpg" width="360" height="617" alt="borodinski">
             				</div>
             				<div class="templates-hover">
             					<h3>Barbershop</h3>
@@ -129,7 +129,7 @@
             			</div>
             			<div class="templates-block">
             				<div class="templates-example">
-            					<img src="img/mishka.jpg" alt="mishka">
+            					<img src="img/mishka.jpg" width="360" height="617" alt="mishka">
             				</div>
             				<div class="templates-hover">
             					<h3>MISHKA</h3>
@@ -139,7 +139,7 @@
             			</div>
             			<div class="templates-block">
             				<div class="templates-example">
-            					<img src="img/aplus.jpg" alt="Aplus">
+            					<img src="img/aplus.jpg" width="360" height="617" alt="Aplus">
             				</div>
             				<div class="templates-hover">
             					<h3>A Plus</h3>
@@ -149,7 +149,7 @@
             			</div>
             			<div class="templates-block">
             				<div class="templates-example">
-            					<img src="img/kvast.jpg" alt="кваст">
+            					<img src="img/kvast.jpg" width="360" height="617" alt="кваст">
             				</div>
             				<div class="templates-hover">
             					<h3>КВАСТ</h3>
@@ -168,14 +168,14 @@
             </div>
         </main>
 		<footer class="footer-container clearfix">
-			<img src="img/map.png" width="100%" alt="map">
+			<img src="img/map.png" width="100%" height="415" alt="map">
 			<div class="contacts-information">
 				<div class="contacts-title">NЁRDS DESIGN STUDIO</div>
 				<div class="contacts-adress">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</div>
 				<div class="contacts-telephone">тел. +7 (812) 275-75-75</div>
 				<a href="#" class="btn">Напишите нам</a>
 			</div>
-			<img src="img/map-marker.png" alt="nerds" class="map-marker">
+			<img src="img/map-marker.png"  width="231" height="190" alt="nerds" class="map-marker">
 			<div class="footer-social">
 				<a href="#" class="social-btn social-btn-vkontakte"></a>
 				<a href="#" class="social-btn social-btn-facebook"></a>

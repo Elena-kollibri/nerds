@@ -20,7 +20,7 @@
 		<header class="main-header clearfix">
 			<div class="container clearfix">
 				<div class="logo">
-					<img src="img/nerds-logo.png" alt="nerds" class="logo">
+					<img src="img/nerds-logo.png" width="160" height="65" alt="nerds" class="logo">
 				</div>
 				<div class="main-navigation">
 					<ul>
@@ -48,7 +48,7 @@
 							<div class="slide-text">	
 								<div class="slide-title">Долго, дорого, скрупулезно.</div>		
 								<p>Математически 	выверенный дизайн <br>для вашего сайта или мобильного приложения. </p>	
-								<a 	href="#" class="btn"><span>узнать больше</span></a>
+								<a 	href="nerds-catalog" class="btn"><span>узнать больше</span></a>
 							</div>
 						</div>
 						<div class="slide">
@@ -141,7 +141,7 @@
 				<div class="contacts-telephone">тел. +7 (812) 275-75-75</div>
 				<a href="#" class="btn">Напишите нам</a>
 			</div>
-			<img src="img/map-marker.png" alt="nerds" class="map-marker">
+			<img src="img/map-marker.png" width="231" height="190" alt="nerds" class="map-marker">
 			<div class="footer-social">
 				<a href="#" class="social-btn social-btn-vkontakte">vkontakte</a>
 				<a href="#" class="social-btn social-btn-facebook">facebook</a>

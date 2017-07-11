@@ -58,6 +58,8 @@ ul .active {
 
 .basket a {
 	position: relative;
+	width: 100%;
+	vertical-align: middle;
 	display: inline-block;
 	padding: 10px 10px 10px 40px;
 	color: black; 
@@ -86,14 +88,7 @@ ul .active {
 .basket a:active {
 	color: #A6A6A6;
 }
-/*почему эти правила не работают?
-.basket a:active::before {
-	opacity: 1;
-}
-.basket a:active {
-	color: #000;
-	opacity: 0.3;
-} */
+
 .main-navigation a:hover {
 	color: #fb565a;
 }
@@ -108,8 +103,8 @@ ul .active {
 }
 .logo {
 	float: left;
-	margin-top: 30px;
-	margin-left: 19px;
+	margin-top: 15px;
+	margin-left: 10px;
 }
 .logo:hover {
 	opacity: 0.8;
@@ -122,11 +117,20 @@ ul .active {
 	width: auto;
 	margin: 0 auto;
 }
+.inner-logo {
+	float: left;
+	margin-top: 30px;
+	margin-left: 19px;
+}
 .inner-main-title {
+	display: inline-block;
+	vertical-align: top;
+	width: 100%;
 	font-size: 55px;
-	margin-top: 0px;
+	padding-left: 40px;
 	padding-top: 65px;
 	padding-bottom: 100px;
+	margin-top: 0px;
 	text-align: center;
 	background-color: #eee;
 }
@@ -189,7 +193,7 @@ ul .active {
 .price-controls input {
 	width: 60px;
 	padding: 8px 8px;
-	margin-left: 15px;
+	margin-left: 9px;
 	border: none;
 	background-color: #f1f1f1;
 	font-size: 16px;
@@ -264,6 +268,7 @@ fieldset {
 }
 label span {
 	display: inline-block;
+	vertical-align: middle;
 	margin-left: 7px;
 	margin-top: 5px;
 	vertical-align: top;
@@ -303,6 +308,7 @@ input[type="radio"] {
 .checkbox-field input[type="checkbox"] {
 	visibility: hidden;
 	display: inline-block;
+	vertical-align: middle;
     width: 10%;
     height: 25px;
     
@@ -310,6 +316,7 @@ input[type="radio"] {
 .checkbox-on-field input[type="checkbox"] {
 	visibility: hidden;
 	display: inline-block;
+	vertical-align: middle;
     width: 10%;
     height: 25px;
     margin-bottom: 10px;
@@ -348,6 +355,7 @@ input[type="radio"] {
 }
 .form .inner-submit {
 	display: inline-block;
+	vertical-align: middle;
 	width: 260px;
 	text-transform: uppercase;
 	text-align: center;
@@ -375,6 +383,7 @@ input[type="radio"] {
 
 .max {
     display: inline-block;
+    vertical-align: middle;
 	margin: 5px 10px;
 	padding: 10px;
 }
@@ -397,6 +406,7 @@ input[type="radio"] {
 
 .sorting-title {
 	display: inline-block;
+	vertical-align: middle;
 	font-size: 18px;
 	line-height: 30px;
 	width: 320px;
@@ -456,6 +466,7 @@ input[type="radio"] {
 .templates-block {
 	position: relative;
 	display: inline-block;
+	vertical-align: top;
 	margin-right: 30px;
 	margin-top: 25px;
 
@@ -475,7 +486,7 @@ input[type="radio"] {
 }
 
 .templates-hover {
-	/*display: none;*/
+	display: none;
 	position: absolute;
 	width: 360px;
 	bottom: 0;
@@ -547,7 +558,7 @@ input[type="radio"] {
 	border-radius: 2px;
 	margin-top: 30px;
 	background-color: #eee;
-
+	vertical-align: middle;
 }
 .paginator a:hover {
 	background-color: #dfdfdf;
@@ -698,6 +709,7 @@ input[type="radio"] {
 }
 .features-item {
 	display: inline-block;
+	vertical-align: middle;
 	width: 300px;
 	margin-right: 95px;
 }
@@ -848,6 +860,7 @@ input[type="radio"] {
 	display: inline-block;
 	float: right;
 	padding: 30px 0;
+	vertical-align: middle;
 }
 
 .statistics-block {
@@ -864,7 +877,7 @@ input[type="radio"] {
 	font-size: 45px;
 	padding-top: 10px;
 	text-align: center;
-
+	vertical-align: middle;
 }
 .percent td {
 	width: 100px;
@@ -873,7 +886,7 @@ input[type="radio"] {
 	display: inline-block;
 	font-size: 16px;
 	line-height: 18px;
-	text-align: center;
+	vertical-align: middle;
 }
 .criterion td {
 	text-align: left;
@@ -886,11 +899,12 @@ input[type="radio"] {
 	display: inline-block;
 	border-top: 1px solid #eee;
 	border-bottom: 1px solid #eee;
+	vertical-align: middle;
 }
 .htmlacademy-wrapper {
 	display: inline-block;
 	width: 300px;
-
+	vertical-align: middle;
 }
 .htmlacademy-wrapper::after {
 	content: '';
@@ -906,6 +920,7 @@ input[type="radio"] {
 .borodinski-wrapper {
 	display: inline-block;
 	width: 300px;
+	vertical-align: middle;
 }
 .borodinski-wrapper::after {
 	content: '';
@@ -920,6 +935,7 @@ input[type="radio"] {
 .pink-wrapper {
 	display: inline-block;
 	width: 300px;
+	vertical-align: middle;
 }
 .pink-wrapper::after {
 	content: '';
@@ -934,6 +950,7 @@ input[type="radio"] {
 .mishka-wrapper {
 	display: inline-block;
 	width: 288px;
+	vertical-align: middle;
 }
 
 .mishka-wrapper::after {
@@ -999,7 +1016,7 @@ input[type="radio"] {
 	display: inline-block;
 	margin: 20px 0 0 54px;
 	color: #666;
-
+	vertical-align: middle;
 }
 .contacts-information .btn {
 	display: block;
@@ -1032,6 +1049,7 @@ input[type="radio"] {
 	display: inline-block;
 	margin-top: 90px;
 	margin-left: 135px;
+	vertical-align: middle;
 }
 .social-btn {
 	display: inline-block;
@@ -1132,6 +1150,7 @@ input[type="radio"] {
 	border: 0;
 	cursor: pointer;
 }
+
 .contacts-information .btn:active .modal-content{
 	display: block;
 } 
@@ -1141,10 +1160,19 @@ input[type="radio"] {
 	position: absolute;
 	width: 24px;
 	height: 3px;
-	background-color: rgba(251,86,90,0.3);
 	border-radius: 1px;
+	background-color: #FB565A; 
+	opacity: 0.3;	
 }
 
+.modal-content-close:hover::before,
+.modal-content-close:hover::after {
+	opacity: 1;
+} 
+.modal-content-close:active::before,
+.modal-content-close:active::after {
+	opacity: 0.1;
+}
 .modal-content-close::before {
 	-webkit-transform: rotate(45deg);
 	        transform: rotate(45deg);
@@ -1174,6 +1202,7 @@ input[type="radio"] {
 	display: inline-block;
 	height: 30px;
 	padding: 25px 0 0 0;
+	vertical-align: middle;
 }
 .user-field .input-user-fiield-id {
 	padding: 15px;
@@ -1194,6 +1223,7 @@ input[type="radio"] {
 	height: 30px;
 	width: 360px;
 	padding: 25px 0 0 0;
+	vertical-align: middle;
 }
 .email-field .input-email-field-id {
 	padding: 15px;
@@ -1205,13 +1235,14 @@ input[type="radio"] {
 	display: inline-block;
 	height: 40px;
 	margin-top: 30px;
-
+	vertical-align: middle;
 }
 .message-field .label-text-field{
 	display: inline-block;
 	height: 20px;
 	width: 760px;
 	padding: 0;
+	vertical-align: middle;
 }
 .message-field .text-field {
 	display: inline-block;
@@ -1219,6 +1250,7 @@ input[type="radio"] {
 	min-height: 120px;
 	font-size: 0;
 	margin-bottom: 40px;
+	vertical-align: middle;
 }
 
 .modal-content .submit {
