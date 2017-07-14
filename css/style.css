@@ -31,6 +31,7 @@ body {
 }
 .main-navigation ul {
 	padding: 0;
+	width: 600px;
 }
 .main-navigation li {
 	list-style: none;
@@ -51,9 +52,10 @@ ul .active {
 	border-bottom: #FB565A;
 }
 .basket {
-	float: right;
+	display: inline-block;
 	min-width: 105px;
-	margin-top: 45px;
+	margin-top: 46px;
+	margin-left: 75px;
 }
 
 .basket a {
@@ -103,6 +105,7 @@ ul .active {
 }
 .logo {
 	float: left;
+	max-width: 160px;
 	margin-top: 15px;
 	margin-left: 10px;
 }
@@ -130,7 +133,8 @@ ul .active {
 	padding-left: 40px;
 	padding-top: 65px;
 	padding-bottom: 100px;
-	margin-top: 0px;
+	margin-top: 0;
+	margin-bottom: 0;
 	text-align: center;
 	background-color: #eee;
 }
@@ -419,6 +423,7 @@ input[type="radio"] {
 	width: 400px;
 }
 .sorting-links a {
+	display: inline-block;
 	padding: 0 10px;
 	font-size: 14px;
 	line-height: 18px;
@@ -433,6 +438,21 @@ input[type="radio"] {
 .sorting-links a:active {
 	opacity: 1;
 }
+.sorting-container {
+	position: relative;
+	display: inline-block;
+	outline: green solid thin;
+	width: 95px;
+	margin-right: 10px;
+	margin-top: 10px;
+}
+.sorting-wrapper {
+	display: inline-block;
+	outline: orange solid thin;
+	width: 291px;
+	margin-right: 0px;
+	margin-top: 0px;
+}
 .sorting-links .up {
 	font-size: 0;
 
@@ -442,7 +462,7 @@ input[type="radio"] {
 	position: absolute;
 	width: 15px;
 	height: 15px;
-	top: 4px;
+	top: 6px;
 	background-image: url(../img/spritesheet.png);
 	background-repeat: no-repeat;
 	background-position: -24px -170px;
@@ -452,7 +472,7 @@ input[type="radio"] {
 	position: absolute;
 	width: 15px;
 	height: 15px;
-	top: 4px;
+	top: 6px;
 	background-image: url(../img/spritesheet.png);
 	background-repeat: no-repeat;
 	background-position: -295px -243px;
@@ -554,11 +574,15 @@ input[type="radio"] {
 	display: inline-block;
 	color: black;
 	text-decoration: none;
-	padding: 10px 15px;
+	padding: 8px 15px;
 	border-radius: 2px;
 	margin-top: 30px;
 	background-color: #eee;
 	vertical-align: middle;
+}
+.paginator a:not(.active){
+	border: 2px solid transparent;
+
 }
 .paginator a:hover {
 	background-color: #dfdfdf;
@@ -566,7 +590,7 @@ input[type="radio"] {
 .paginator a:active {
 	background-color: #d5d5d5;
 	color: #959595;
-	padding: 8px 15px 10px;
+	padding: 8px 15px 8px;
 	border-top: 2px solid #bfbfbf;
 }
 .paginator .active {
@@ -616,16 +640,27 @@ input[type="radio"] {
 .slider-controls .active {
 	background: #c1c1c1;
 }
+
 .slide {
+	outline: blue solid thin;
+	display: none;
 	position: absolute;
 	top: 0px;
 	left: 0px;
 	width: 100%;
-	height: 100%;
-	overflow: hidden;
+	min-height: 405px;
+	background-color: #eee;
 }
 .slide-text {
 	width: 440px;
+	color: #000;
+}
+
+.slide-title {
+	font-size: 55px;
+	padding: 65px 0px 0px 55px;
+	line-height: 1;
+	font-weight: bold;
 	color: #000;
 }
 .slide-text p {
@@ -634,14 +669,6 @@ input[type="radio"] {
 	padding: 13px 0px 10px 55px;
 
 }
-.slide-title {
-	font-size: 55px;
-	padding: 65px 0px 0px 55px;
-	line-height: 1;
-	font-weight: bold;
-	color: #000;
-}
-
 .slide-text .btn {
 	display: block;
 	width: 240px;
@@ -651,8 +678,9 @@ input[type="radio"] {
 	border-radius: 3px;
 	color: #fff;
 	padding: 15px 0px;
-	margin-top: 30px;
+	margin-top: 20px;
 	margin-left: 55px;
+	margin-bottom: 20px;
 	background-color: #fb565a;
 	font-size: 16px;
 	line-height: 18px;
@@ -667,18 +695,17 @@ input[type="radio"] {
 	background-color: #D7373B;
 	border-top: 2px solid #C13135;
 	padding: 13px 0 15px;
+	opacity: 0.3;
 }
 .slide-text .btn:active span {
-	opacity: 0.3;
+	
 }
 .slide:nth-child(1) {
 	background-image:url("../img/slide-1.png");
 	background-repeat: no-repeat;
 	background-position: 490px 7px;
 }
-.slide {
-	display: none;
-}
+
 .slide:nth-child(1) {
 	display: block;
 }
@@ -686,6 +713,12 @@ input[type="radio"] {
 	background-image: url("../img/slide-2.png");
 	background-repeat: no-repeat;
 	background-position: 100% 10px;
+}
+.slide:nth-child(2){
+	display: none;
+}	
+.slide:nth-child(3){
+	display: none;
 }
 .slide:nth-child(3){
 	background-image: url("../img/slide-3.png");
@@ -727,8 +760,7 @@ input[type="radio"] {
 	border-radius: 3px;
 	color: #fff;
 	padding: 15px 0px;
-	margin-top: 35px;
-	margin-left: 5px;
+	margin: 35px 0 85px 5px;
 	background-color: #fb565a;
 	font-size: 16px;
 	line-height: 18px;
@@ -804,19 +836,22 @@ input[type="radio"] {
 }
 .about-us-left {
 	display: inline-block;
-	width: 610px;
-	padding-top: 30px;
-	
+	width: 700px;
+	padding: 30px 10px 0 10px;
+	outline: blue solid thin;
 }
-
-.about-us-title {
+.about-us-container {
 	float: left;
+	width: 660px;
+	margin: 0 auto;
+	outline: red solid thin;
+}
+.about-us-title {
 	width: 670px;
 	font-size: 45px;
 	line-height: 35px;
 }
 .about-us-left .about-us-description {
-	float: left;
 	width: 650px;
 	font-size: 16px;
 	line-height: 24px;
@@ -824,47 +859,44 @@ input[type="radio"] {
 	margin-top: 0;
 }
 .about-us-subtitle {
-	float: left;
 	width: 550px;
 	margin-top: 25px;
 	font-size: 16px;
 	line-height:  24px;
-	
+	text-transform: uppercase;
 }
 .about-us-subtitle ul {
 	list-style-type: none;
-	margin: 0;
 	padding: 10px 0px;
 }	
 .about-us-subtitle li {
+	position: relative;
 	float: left;
 	font-size: 16px;
 	line-height: 24px;
-	padding: 13px 0px;
+	padding: 13px 35px;
+	text-transform: none;
 }
 .about-us-subtitle ul>li:before {
 	content: "──";
+	position: absolute;
 	color: red;
-	padding-right: 20px;
-
+	left: 0;
 }
 
 .about-us-right {
 	display: inline-block;
 	width: 360px;
-	margin-left: 190px;
 	margin-top: 6px;
 	vertical-align: top;
 }
 .about-us-right-logo {
-	display: inline-block;
-	float: right;
 	padding: 30px 0;
 	vertical-align: middle;
 }
 
 .statistics-block {
-	float: left;
+	padding-top: 15px;
 }
 .statistics-block-title{
 	font-size: 16px;
@@ -872,18 +904,24 @@ input[type="radio"] {
 	text-align: center;
 	padding: 0 10px;
 }
+.table {
+	display: table;
+	margin-bottom: 40px;
+}
 .percent {
-	display: inline-block;
 	font-size: 45px;
 	padding-top: 10px;
 	text-align: center;
 	vertical-align: middle;
+	outline: red solid thin;
 }
 .percent td {
+	display: table-cell;
+	outline: blue solid thin;
 	width: 100px;
 }
 .criterion {
-	display: inline-block;
+	display: table-row;
 	font-size: 16px;
 	line-height: 18px;
 	vertical-align: middle;
@@ -905,6 +943,7 @@ input[type="radio"] {
 	display: inline-block;
 	width: 300px;
 	vertical-align: middle;
+
 }
 .htmlacademy-wrapper::after {
 	content: '';
@@ -983,40 +1022,46 @@ input[type="radio"] {
 	width: auto;
 	margin: 75px 0;
 	position: relative;
-
+	outline: red solid thin;
+}
+.footer-wrapper {
+	width: 1160px;
+	padding: 0 20px;
+	margin: auto;
+	outline: blue solid thin;
 }
 .footer-container .map-marker {
 	position: absolute;
-	float: right;
 	top: 88px;
 	right: 360px;
 }
 .contacts-information {
 	position: absolute;
-	float: left;
-	width: 300px;
+	width: 320px;
 	background-color: #fff;
 	top: 50px;
 	left: 137px;
+	outline: blue solid thin;
+}
+.contacts-information-container {
+	width: 235px;
+	margin: auto;
+	outline:  red solid thin;
 }
 .contacts-title {
-	float: left;
 	font-size: 18px;
-	text-align: center;
-	margin: 60px 0px 0 54px;
+	text-transform: uppercase;
+	margin: 60px 0 0 0;
 }
 .contacts-adress {
-	float: left;
 	width: 205px;
-	margin: 25px 85px 0 54px;
+	margin: 25px 0 0 0;
 	color: #666;
 }
 
 .contacts-telephone {
-	display: inline-block;
-	margin: 20px 0 0 54px;
+	margin: 20px 0;
 	color: #666;
-	vertical-align: middle;
 }
 .contacts-information .btn {
 	display: block;
@@ -1027,7 +1072,7 @@ input[type="radio"] {
 	border-radius: 3px;
 	color: #fff;
 	padding: 15px 0px;
-	margin: 38px 0 35px 54px;
+	margin: 38px 0 35px 0;
 	background-color: #fb565a;
 	font-size: 16px;
 	line-height: 18px;
@@ -1047,20 +1092,25 @@ input[type="radio"] {
 
 .footer-social {
 	display: inline-block;
-	margin-top: 90px;
-	margin-left: 135px;
-	vertical-align: middle;
+	vertical-align: top;
+	width: 263px;
+	margin-left: 42px;
+	outline: green solid thin;
 }
 .social-btn {
 	display: inline-block;
 	width: 75px;
 	height: 75px;
 	margin-right: 15px;
-	margin-top: -55px;
+	margin-top: 52px;
 	border-radius: 50%; 
-	vertical-align: middle;
+	vertical-align: top;
 	background-color: #E1E1E1;
 	font-size: 0;
+	outline: orange solid thin;
+}
+.social-btn:nth-child(3n) {
+	margin-right: 0;
 }
 .social-btn:hover {
 	background-color: #E74246;

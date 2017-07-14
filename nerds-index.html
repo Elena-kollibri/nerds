@@ -7,7 +7,7 @@
 			@font-face {
 				font-family: Roboto;
 				src: url("fonts/Roboto-master/Roboto-Regular.ttf"),
-				url("fonts/web/roboto-woff");
+				url("fonts/web/roboto.woff");
 			}
 			h1 {
 				font-family : Roboto;
@@ -22,8 +22,8 @@
 				<div class="logo">
 					<img src="img/nerds-logo.png" width="160" height="65" alt="nerds" class="logo">
 				</div>
-				<div class="main-navigation">
-					<ul>
+				<div class="main-navigation clearfix">
+					<ul class="clearfix">
 						<li><a href="#">студия</a></li>
 						<li><a href="#">клиенты</a></li>
 						<li><a href="#" class="active">магазин</a></li>
@@ -46,63 +46,65 @@
 					<div class="slides">
 						<div class="slide">
 							<div class="slide-text">	
-								<div class="slide-title">Долго, дорого, скрупулезно.</div>		
-								<p>Математически 	выверенный дизайн <br>для вашего сайта или мобильного приложения. </p>	
-								<a 	href="nerds-catalog" class="btn"><span>узнать больше</span></a>
+								<div class="slide-title">Долго, дорого, скрупулезно.</div>
+								<p>Математически 	выверенный дизайн для вашего сайта или мобильного приложения. </p>	
+								<a 	href="nerds-catalog" class="btn">узнать больше</a>
 							</div>
 						</div>
 						<div class="slide">
 							<div class="slide-text">	
-								<div class="slide-title">Любим математику как никто другой</div>	
+								<div class="slide-title">Любим математику как никто другой</div>
 								<p class="slide-text">Никакого креатива, только математические формулы для расчета идеальных пропорций. </p>
-								<a 	href="#" class="btn"><span>узнать больше</span></a>
+								<a 	href="#" class="btn">узнать больше</a>
 							</div>
-						</div>
+						</div>	
 						<div class="slide">
 							<div class="slide-text">	
 								<div class="slide-title">Только ночь, только хардкор</div>		
 								<p class="slide-text">Работать днем, как все? 	Мы против этого. Ближе к полуночи работа только начинается.</p>	
-								<a 	href="#" class="btn"><span>узнать больше</span></a>
+								<a 	href="#" class="btn">узнать больше</a>
 							</div>
-						</div>	
-					</div>
-				</div>							
-			</div>
+						</div>
+					</div>							
+				</div>
+			</div>	
 			<div class="main-wrapper">
 				<div class="features">
 					<div class="features-item web-sites">
 						<div class="features-title">Веб-сайты</div>
 						<div class="features-description">Мир никогда не будет прежним после того как увидит ваш сайт!</div>
-						<a href="#" class="btn"><span>заказать</span></a>
+						<a href="#" class="btn">заказать</a>
 					</div>
 					<div class="features-item application">
 						<div class="features-title">Приложения</div>
 						<div class="features-description">Покорите топ-10 приложений в AppStore и Google Play</div>
-						<a href="#" class="btn green"><span>заказать</span></a>
+						<a href="#" class="btn green">заказать</a>
 					</div>
 					<div class="features-item presentations">
 						<div class="features-title">Презентации</div>
 						<div class="features-description">Вы даже не подозреваете, насколько вы изумительны!</div>
-						<a href="#" class="btn yellow"><span>заказать</span></a>
+						<a href="#" class="btn yellow">заказать</a>
 					</div>
 				</div>
 				<div class="about-us clearfix">
-					<div class="about-us-left">
-						<p class="about-us-title">Мы — маленькая, но гордая 	дизайн-студия из Краснодара.</p>	
-						<p class="about-us-description">Исповедуем принципы 	минимализма и чистоты. Ставим математический расчет	превыше креатива. Работаем не покладая рук, как роботы.</p>	
-						<div class="about-us-subtitle"> ВЫПОЛНЯЕМ ЗАКАЗЫ НА РАЗРАБОТКУ: 	
-							<ul class="clearfix"> 	
-								<li>Веб-сайтов любой сложности</li> 	
-								<li>Мобильных приложений для iOS и Android</li>
-								<li>Слайдшоу и видео для корпоративных 	презентаций</li>	
-							</ul>	
+					<div class="about-us-left clearfix">
+						<div class="about-us-container clearfix">
+							<p class="about-us-title">Мы — маленькая, но гордая 	дизайн-студия из Краснодара.</p>	
+							<p class="about-us-description">Исповедуем принципы 	минимализма и чистоты. Ставим математический расчет	превыше креатива. Работаем не покладая рук, как роботы.</p>	
+							<div class="about-us-subtitle"> выполняем заказы на разработку: 	
+								<ul class="clearfix"> 	
+									<li>Веб-сайтов любой сложности</li> 
+									<li>Мобильных приложений для iOS и Android</li>
+									<li>Слайдшоу и видео для корпоративных 	презентаций</li>	
+								</ul>	
+							</div>
 						</div>
 					</div>	
-					<div class="about-us-right"> 
+					<div class="about-us-right clearfix"> 
 						<img src="img/color-logo.png" width="360" height="208" alt="nerds" class="about-us-right-logo">
 						<div class="statistics-block">
 							<h3 class="statistics-block-title">с 2004 года любим 	точность во всем:</h3>
-								<table> 
+								<table class="table"> 
 									<tr class="percent">
 										<td>146%</td>
 										<td>100%</td>
@@ -135,21 +137,25 @@
 		</main>
 		<footer class="footer-container clearfix">
 			<img src="img/map.png" width="100%" height="415" alt="map">
-			<div class="contacts-information">
-				<div class="contacts-title">NЁRDS DESIGN STUDIO</div>
-				<div class="contacts-adress">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</div>
-				<div class="contacts-telephone">тел. +7 (812) 275-75-75</div>
-				<a href="#" class="btn">Напишите нам</a>
+			<div class="contacts-information clearfix">
+				<div class="contacts-information-container">
+					<div class="contacts-title">nёrds design studio</div>
+					<div class="contacts-adress">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</div>
+					<div class="contacts-telephone">тел. +7 (812) 275-75-75</div>
+					<a href="#" class="btn">Напишите нам</a>
+				</div>
 			</div>
 			<img src="img/map-marker.png" width="231" height="190" alt="nerds" class="map-marker">
-			<div class="footer-social">
-				<a href="#" class="social-btn social-btn-vkontakte">vkontakte</a>
-				<a href="#" class="social-btn social-btn-facebook">facebook</a>
-				<a href="#" class="social-btn social-btn-instagram">instagram</a>
-			</div>	
-			<div class="footer-slogan">
-				<div class="footer-title">Давайте дружить, это выгодно!</div>
-				<div class="footer-text">Скидка 10% для друзей из социальных сетей.</div>
+			<div class="footer-wrapper">
+				<div class="footer-social">
+					<a href="#" class="social-btn social-btn-vkontakte">vkontakte</a>
+					<a href="#" class="social-btn social-btn-facebook">facebook</a>
+					<a href="#" class="social-btn social-btn-instagram">instagram</a>
+				</div>	
+				<div class="footer-slogan">
+					<div class="footer-title">Давайте дружить, это выгодно!</div>
+					<div class="footer-text">Скидка 10% для друзей из социальных сетей.</div>
+				</div>	
 			</div>
 			<div class="modal-content">
 				<button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
