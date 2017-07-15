@@ -21,7 +21,7 @@ body {
 .container {
 	width: 1160px;
 	margin: 0 auto;
-	padding: 20px 0px 0px 50px;
+	padding: 0 20px;
 }
 
 .main-navigation {
@@ -52,18 +52,18 @@ ul .active {
 	border-bottom: #FB565A;
 }
 .basket {
-	display: inline-block;
+	float: right;
 	min-width: 105px;
 	margin-top: 46px;
-	margin-left: 75px;
+	margin-left: 100px;
 }
 
 .basket a {
 	position: relative;
-	width: 100%;
+	width: 66px;
 	vertical-align: middle;
 	display: inline-block;
-	padding: 10px 10px 10px 40px;
+	padding: 10px 0 10px 40px;
 	color: black; 
 	text-decoration: none;
 	text-transform: uppercase;
@@ -76,7 +76,7 @@ ul .active {
 	content: "";
 	position: absolute;
 	top: 15px;
-	left: 15px;
+	left: 0;
 	width: 15px;
     height: 15px;
     background-image: url("../img/spritesheet.png");
@@ -107,7 +107,6 @@ ul .active {
 	float: left;
 	max-width: 160px;
 	margin-top: 15px;
-	margin-left: 10px;
 }
 .logo:hover {
 	opacity: 0.8;
@@ -115,7 +114,7 @@ ul .active {
 .logo:active {
 	opacity: 0.3;
 }
-/*Начало стилей внутренней страницы*/
+/*Начало стилей внутренней страницы, до 606 строки*/
 .inner-main {
 	width: auto;
 	margin: 0 auto;
@@ -441,14 +440,12 @@ input[type="radio"] {
 .sorting-container {
 	position: relative;
 	display: inline-block;
-	outline: green solid thin;
 	width: 95px;
 	margin-right: 10px;
 	margin-top: 10px;
 }
 .sorting-wrapper {
 	display: inline-block;
-	outline: orange solid thin;
 	width: 291px;
 	margin-right: 0px;
 	margin-top: 0px;
@@ -604,16 +601,10 @@ input[type="radio"] {
 	text-align: center;
 }
 /*Конец стилей внутренней страницы*/
-.slides-container {
-	width: auto;
-	margin: 0;
-	padding-top: 10px;
-	background-color: #eee;
-}
 
 .slider {
 	position: relative;
-	width: 1185px;
+	width: 100%;
 	height: 405px;
 	margin: 0 auto;
 }
@@ -642,13 +633,12 @@ input[type="radio"] {
 }
 
 .slide {
-	outline: blue solid thin;
 	display: none;
 	position: absolute;
 	top: 0px;
 	left: 0px;
 	width: 100%;
-	min-height: 405px;
+	min-height: 407px;
 	background-color: #eee;
 }
 .slide-text {
@@ -658,15 +648,16 @@ input[type="radio"] {
 
 .slide-title {
 	font-size: 55px;
-	padding: 65px 0px 0px 55px;
+	padding: 65px 0 0 0;
 	line-height: 1;
 	font-weight: bold;
 	color: #000;
 }
 .slide-text p {
+	width: 330px;
 	font-size: 16px;
 	line-height: 24px;
-	padding: 13px 0px 10px 55px;
+	padding: 10px 0px 10px 0;
 
 }
 .slide-text .btn {
@@ -678,8 +669,7 @@ input[type="radio"] {
 	border-radius: 3px;
 	color: #fff;
 	padding: 15px 0px;
-	margin-top: 20px;
-	margin-left: 55px;
+	margin-top: 31px;
 	margin-bottom: 20px;
 	background-color: #fb565a;
 	font-size: 16px;
@@ -703,7 +693,7 @@ input[type="radio"] {
 .slide:nth-child(1) {
 	background-image:url("../img/slide-1.png");
 	background-repeat: no-repeat;
-	background-position: 490px 7px;
+	background-position: 432px 4px;
 }
 
 .slide:nth-child(1) {
@@ -726,17 +716,22 @@ input[type="radio"] {
 	background-position: 100% 10px;
 }
 
-.main-container {
+.main {
 	width: auto;
 	margin: 0 auto;
+	background-color: #eee;
+
 }
-.main-wrapper {
-	width: 1200px;
-	margin: 95px auto 50px;
-	padding-left: 125px;
+.main-block {
+	width: auto;
+	margin: 0 auto;
+	padding-top: 95px;
+	background-color: #fff;
 }
+
+
 .features {
-	padding-bottom: 85px;
+	padding-bottom: 37px;
 	border-bottom: 1px solid #eeeeee;
 
 }
@@ -749,7 +744,6 @@ input[type="radio"] {
 
 .features-item:last-child {
 	margin-right: 0px;
-	padding-left: 10px;
 }
 .features-item .btn {
 	display: block;
@@ -760,7 +754,7 @@ input[type="radio"] {
 	border-radius: 3px;
 	color: #fff;
 	padding: 15px 0px;
-	margin: 35px 0 85px 5px;
+	margin: 33px 0 85px 0;
 	background-color: #fb565a;
 	font-size: 16px;
 	line-height: 18px;
@@ -772,13 +766,12 @@ input[type="radio"] {
 }
 .features-item .green{
  	background-color: #00CA74;
- 	margin-left: 0px;
+ 	margin-left: 0;
 }
 
  .presentations .yellow {
  	background-color: #EFC84A;
- 	margin-left: -5px;
- }
+}
 .features-title {
 	margin-top: 170px;
 	font-size: 24px;
@@ -786,6 +779,7 @@ input[type="radio"] {
 	text-transform: uppercase;
 }
 .features-description {
+	width: 260px;
 	margin-top: 15px;
 	font-size: 16px;
 	line-height: 24px;
@@ -830,26 +824,24 @@ input[type="radio"] {
 	padding: 13px 0 15px;
 }
 .about-us {
-	width: 1200px;
-	margin: 0 auto;
-	padding-bottom: 55px;
+	width: auto;
 }
 .about-us-left {
 	display: inline-block;
 	width: 700px;
-	padding: 30px 10px 0 10px;
-	outline: blue solid thin;
+	padding: 38px 95px 0 0;
 }
 .about-us-container {
 	float: left;
 	width: 660px;
 	margin: 0 auto;
-	outline: red solid thin;
 }
 .about-us-title {
 	width: 670px;
-	font-size: 45px;
-	line-height: 35px;
+	font-size: 43px;
+	line-height: 45px;
+	margin-top: 0;
+	margin-bottom: 29px;
 }
 .about-us-left .about-us-description {
 	width: 650px;
@@ -860,7 +852,7 @@ input[type="radio"] {
 }
 .about-us-subtitle {
 	width: 550px;
-	margin-top: 25px;
+	margin-top: 38px;
 	font-size: 16px;
 	line-height:  24px;
 	text-transform: uppercase;
@@ -874,7 +866,7 @@ input[type="radio"] {
 	float: left;
 	font-size: 16px;
 	line-height: 24px;
-	padding: 13px 35px;
+	padding: 0px 35px 23px 35px;
 	text-transform: none;
 }
 .about-us-subtitle ul>li:before {
@@ -887,11 +879,10 @@ input[type="radio"] {
 .about-us-right {
 	display: inline-block;
 	width: 360px;
-	margin-top: 6px;
 	vertical-align: top;
 }
 .about-us-right-logo {
-	padding: 30px 0;
+	padding: 0 0 7px 0;
 	vertical-align: middle;
 }
 
@@ -906,6 +897,7 @@ input[type="radio"] {
 }
 .table {
 	display: table;
+	margin-top: 34px; 
 	margin-bottom: 40px;
 }
 .percent {
@@ -913,11 +905,9 @@ input[type="radio"] {
 	padding-top: 10px;
 	text-align: center;
 	vertical-align: middle;
-	outline: red solid thin;
 }
 .percent td {
 	display: table-cell;
-	outline: blue solid thin;
 	width: 100px;
 }
 .criterion {
@@ -937,11 +927,12 @@ input[type="radio"] {
 	display: inline-block;
 	border-top: 1px solid #eee;
 	border-bottom: 1px solid #eee;
+	padding-top: 30px;
 	vertical-align: middle;
 }
 .htmlacademy-wrapper {
 	display: inline-block;
-	width: 300px;
+	width: 287px;
 	vertical-align: middle;
 
 }
@@ -958,7 +949,7 @@ input[type="radio"] {
 
 .borodinski-wrapper {
 	display: inline-block;
-	width: 300px;
+	width: 287px;
 	vertical-align: middle;
 }
 .borodinski-wrapper::after {
@@ -973,7 +964,7 @@ input[type="radio"] {
 }
 .pink-wrapper {
 	display: inline-block;
-	width: 300px;
+	width: 287px;
 	vertical-align: middle;
 }
 .pink-wrapper::after {
@@ -988,10 +979,12 @@ input[type="radio"] {
 }	
 .mishka-wrapper {
 	display: inline-block;
-	width: 288px;
+	width: 287px;
 	vertical-align: middle;
 }
-
+.mishka-wrapper:last-child {
+	margin-right: 0; 
+}
 .mishka-wrapper::after {
 	content: '';
 	position: absolute;
@@ -1022,14 +1015,8 @@ input[type="radio"] {
 	width: auto;
 	margin: 75px 0;
 	position: relative;
-	outline: red solid thin;
 }
-.footer-wrapper {
-	width: 1160px;
-	padding: 0 20px;
-	margin: auto;
-	outline: blue solid thin;
-}
+
 .footer-container .map-marker {
 	position: absolute;
 	top: 88px;
@@ -1039,19 +1026,17 @@ input[type="radio"] {
 	position: absolute;
 	width: 320px;
 	background-color: #fff;
-	top: 50px;
-	left: 137px;
-	outline: blue solid thin;
+	top: 58px;
+	left: 97px;
 }
 .contacts-information-container {
 	width: 235px;
-	margin: auto;
-	outline:  red solid thin;
+	margin-left: 48px;
+	margin-top: 51px;
 }
 .contacts-title {
 	font-size: 18px;
 	text-transform: uppercase;
-	margin: 60px 0 0 0;
 }
 .contacts-adress {
 	width: 205px;
@@ -1060,7 +1045,7 @@ input[type="radio"] {
 }
 
 .contacts-telephone {
-	margin: 20px 0;
+	margin: 15px 0;
 	color: #666;
 }
 .contacts-information .btn {
@@ -1094,20 +1079,17 @@ input[type="radio"] {
 	display: inline-block;
 	vertical-align: top;
 	width: 263px;
-	margin-left: 42px;
-	outline: green solid thin;
 }
 .social-btn {
 	display: inline-block;
 	width: 75px;
 	height: 75px;
 	margin-right: 15px;
-	margin-top: 52px;
+	margin-top: 71px;
 	border-radius: 50%; 
 	vertical-align: top;
 	background-color: #E1E1E1;
 	font-size: 0;
-	outline: orange solid thin;
 }
 .social-btn:nth-child(3n) {
 	margin-right: 0;
@@ -1162,8 +1144,8 @@ input[type="radio"] {
 }
 .footer-slogan {
 	display: inline-block;
-	margin-left: 125px;
-	margin-top: 52px;
+	margin-left: 131px;
+	margin-top: 71px;
 }
 .footer-title {
 	font-size: 36px;
@@ -1176,12 +1158,12 @@ input[type="radio"] {
 .modal-content {
 	display: none;
 	position: absolute;
-	bottom: 75px;
+	bottom: 108px;
 	left: 50%;
-	margin-left: -435px;
+	margin-left: -479px;
 	width: 760px;
 	height: 590px;
-	padding: 10px 100px;
+	padding: 0 100px;
 	color: #000;
 	background: #fff;
 	-webkit-box-shadow: 5px -2px 30px 10px rgba(0,0,0, 0.2),
@@ -1232,16 +1214,14 @@ input[type="radio"] {
 	        transform: rotate(-45deg);
 }
 .modal-content-title {
-	width: 770px;
 	padding-bottom: 10px;
-	padding-top: 60px;
+	padding-top: 69px;
 	font-size: 45px;
 	line-height: 45px;
-	letter-spacing: 5px;
 }
 .forms-field {
 	display: inline-block;
-	width: 800px;
+	width: 760px;
 }
 .user-field {
 	display: inline-block;
@@ -1291,15 +1271,16 @@ input[type="radio"] {
 	display: inline-block;
 	height: 20px;
 	width: 760px;
-	padding: 0;
+	padding: 4px 0 10px;
 	vertical-align: middle;
 }
 .message-field .text-field {
 	display: inline-block;
-	width: 760px;
-	min-height: 120px;
+	width: 754px;
+	min-height: 116px;
 	font-size: 0;
 	margin-bottom: 40px;
+	padding: 0;
 	vertical-align: middle;
 }
 
@@ -1312,8 +1293,8 @@ input[type="radio"] {
 	border: none;
 	border-radius: 3px;
 	color: #fff;
-	padding: 15px 0px;
-	margin: 0px 0px 25px 0px;
+	padding: 15px 0;
+	margin: 160px 0 0 0;
 	background-color: #fb565a;
 	font-size: 16px;
 	line-height: 18px;
