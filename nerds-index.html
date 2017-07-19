@@ -3,27 +3,17 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Nerds</title>
-		<style>
-			@font-face {
-				font-family: Roboto;
-				src: url("fonts/Roboto-master/Roboto-Regular.ttf"),
-				url("fonts/web/roboto.woff");
-			}
-			h1 {
-				font-family : Roboto;
-			}
-		</style>
-	    <link href="css/normalize.css" rel="stylesheet">
+		<link href="css/normalize.css" rel="stylesheet">
 		<link href="css/style.css" rel="stylesheet">
 	</head>
 	<body>
-		<header class="main-header clearfix">
+		<header class="main-header">
 			<div class="container clearfix">
 				<div class="logo">
 					<img src="img/nerds-logo.png" width="160" height="65" alt="nerds" class="logo">
 				</div>
-				<div class="main-navigation clearfix">
-					<ul class="clearfix">
+				<div class="main-navigation">
+					<ul class="items clearfix">
 						<li><a href="#">студия</a></li>
 						<li><a href="#">клиенты</a></li>
 						<li><a href="#" class="active">магазин</a></li>
@@ -31,43 +21,45 @@
 					</ul>
 				</div>
 				<div class="basket">
-					<a href="#">корзина</a>
+					<a href="#" class="buy">корзина</a>
 				</div>
 			</div>	
 		</header>
 		<main class="main">
-			<div class="container">		
-				<div class="slider">
-					<div class="slider-controls">
-						<i class="active"></i>
-						<i></i>
-						<i></i>
+			<div class="slider-wrapper">
+				<div class="container">		
+					<div class="slider">
+						<div class="slider-controls">
+							<i class="active"></i>
+							<i></i>
+							<i></i>
+						</div>
+						<div class="slides">
+							<div class="slide">
+								<div class="slide-text">	
+									<div class="slide-title">Долго, дорого, скрупулезно.</div>
+									<p>Математически 	выверенный дизайн для вашего сайта или мобильного приложения. </p>	
+									<a 	href="nerds-catalog" class="btn">узнать больше</a>
+								</div>
+							</div>
+							<div class="slide">
+								<div class="slide-text">	
+									<div class="slide-title">Любим математику как никто другой</div>
+									<p class="slide-text">Никакого креатива, только математические формулы для расчета идеальных пропорций. </p>
+									<a 	href="#" class="btn">узнать больше</a>
+								</div>
+							</div>	
+							<div class="slide">
+								<div class="slide-text">	
+									<div class="slide-title">Только ночь, только хардкор</div>		
+									<p class="slide-text">Работать днем, как все? 	Мы против этого. Ближе к полуночи работа только начинается.</p>	
+									<a 	href="#" class="btn">узнать больше</a>
+								</div>
+							</div>
+						</div>							
 					</div>
-					<div class="slides">
-						<div class="slide">
-							<div class="slide-text">	
-								<div class="slide-title">Долго, дорого, скрупулезно.</div>
-								<p>Математически 	выверенный дизайн для вашего сайта или мобильного приложения. </p>	
-								<a 	href="nerds-catalog" class="btn">узнать больше</a>
-							</div>
-						</div>
-						<div class="slide">
-							<div class="slide-text">	
-								<div class="slide-title">Любим математику как никто другой</div>
-								<p class="slide-text">Никакого креатива, только математические формулы для расчета идеальных пропорций. </p>
-								<a 	href="#" class="btn">узнать больше</a>
-							</div>
-						</div>	
-						<div class="slide">
-							<div class="slide-text">	
-								<div class="slide-title">Только ночь, только хардкор</div>		
-								<p class="slide-text">Работать днем, как все? 	Мы против этого. Ближе к полуночи работа только начинается.</p>	
-								<a 	href="#" class="btn">узнать больше</a>
-							</div>
-						</div>
-					</div>							
-				</div>
-			</div>	
+				</div>	
+			</div>
 			<div class="main-block">
 				<div class="container">
 					<div class="features">
@@ -90,13 +82,14 @@
 					<div class="about-us clearfix">
 						<div class="about-us-left clearfix">
 							<div class="about-us-container clearfix">
-								<p class="about-us-title">Мы — маленькая, но гордая 	дизайн-студия из Краснодара.</p>	
-								<p class="about-us-description">Исповедуем принципы 	минимализма и чистоты. Ставим математический расчет	превыше креатива. Работаем не покладая рук, как роботы.</p>	
+								<p class="about-us-title">Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>	
+								<p class="about-us-description">Исповедуем принципы минимализма и чистоты. Ставим математический расчет	превыше креатива. Работаем не покладая рук, как роботы.</p>	
 								<div class="about-us-subtitle"> выполняем заказы на разработку: 	
 									<ul class="clearfix"> 	
-										<li>Веб-сайтов любой сложности</li> 
+										<li>Веб-сайтов любой сложности
+										</li> 
 										<li>Мобильных приложений для iOS и Android</li>
-										<li>Слайдшоу и видео для корпоративных 	презентаций</li>	
+										<li>Слайдшоу и видео для корпоративных 	презентаций</li>
 									</ul>	
 								</div>
 							</div>
@@ -104,7 +97,7 @@
 						<div class="about-us-right clearfix"> 
 							<img src="img/color-logo.png" width="360" height="208" alt="nerds" class="about-us-right-logo">
 							<div class="statistics-block">
-								<h3 class="statistics-block-title">с 2004 года любим 	точность во всем:</h3>
+								<h3 class="statistics-block-title">с 2004 года любим точность во всем:</h3>
 									<table class="table"> 
 										<tr class="percent">
 											<td>146%</td>
@@ -121,16 +114,16 @@
 						</div>
 					</div>	
 					<div class="brands-list">
-						<div class="htmlacademy-wrapper">
+						<div class="wrapper">
 							<img src="img/htmlacademy-logo.png" width="209" height="70" alt="htmlacademy">
 						</div>
-						<div class="borodinski-wrapper">
+						<div class="wrapper">
 							<img src="img/borodinski-logo.png" width="209" height="70" alt="barbershop-borodinski">
 						</div>
-						<div class="pink-wrapper">
+						<div class="wrapper">
 							<img src="img/pink-logo.png" width="209" height="70" alt="pink">
 					</div>
-					<div class="mishka-wrapper">
+					<div class="wrapper">
 						<img src="img/mishka-logo.png" width="209" height="70" alt="mishka">
 					</div>
 				</div>
@@ -166,15 +159,15 @@
 					<div class="forms-field">
 						<div class="user-field">
 							<label for="user-field-id" class="user-field-id">Ваше имя:</label>
-								<input id="user-fiield-id" class="input-user-fiield-id" type="username" placeholder="Представьтесь, пожалуйста">
+							<input id="user-fiield-id" class="input-user-fiield-id" type="name" placeholder="Представьтесь, пожалуйста">
 						</div>	
 						<div class="email-field">
 							<label for="email-field-id" class="email-field-id">Ваш e-mail:</label>
-								<input id="input-email-field-id" class="input-email-field-id" type="email" placeholder="Для отправки ответа">
+							<input id="input-email-field-id" class="input-email-field-id" type="email" placeholder="Для отправки ответа">
 						</div>
 						<div class="message-field">
-							<label for="label-text-field" class="label-text-field">Текст письма:</label>
-							<textarea name="letter-text" id="text-field" class="text-field" cols="30" rows="10" placeholder="В свободной форме">поле для ввода текста</textarea>
+							<label for="label-text-field" class="label-text-field" >Текст письма:</label>
+							<textarea name="letter-text" type="text" id="label-text-field" class="text-field" cols="30" rows="10" placeholder="В свободной форме">поле для ввода текста</textarea>
 						</div>
 					</div>
 					<input type="submit" value="отправить" class="submit">	

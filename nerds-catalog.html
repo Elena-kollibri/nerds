@@ -3,17 +3,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>nerds-catalog</title>
-		<style>
-			@font-face {
-				font-family: Roboto;
-				src: url("fonts/Roboto-master/Roboto-Regular.ttf"),
-				url("fonts/web/roboto-woff");
-			}
-			h1 {
-				font-family : Roboto;
-			}
-		</style>
-	    <link href="css/normalize.css" rel="stylesheet">
+		<link href="css/normalize.css" rel="stylesheet">
 		<link href="css/style.css" rel="stylesheet">
 	</head>
 	<body>
@@ -22,7 +12,7 @@
 				<div class="inner-logo">
 					<img src="img/nerds-logo.png" width="160" height="65" alt="nerds">
 				</div>	
-				<div class="main-navigation">
+				<div class="inner-main-navigation">
 					<ul>
 						<li><a href="nerds-index">студия</a></li>
 						<li><a href="#">клиенты</a></li>
@@ -31,7 +21,7 @@
                     </ul>
 				</div>
 				<div class="basket">
-					<a href="#">корзина</a>
+					<a href="#" class="buy">корзина</a>
 				</div>
 			</div>
 		</header>
@@ -47,39 +37,36 @@
 							<div class="toggle max-toggle"></div>
 						</div>
 						<div class="price-controls">
-							ОТ <input class="min-price" type="text" value="0">
-							ДО <input class="max-price" type="text" value="15000">
+							<b>от</b><input class="min-price" type="text" value="0">
+							<b>до</b><input class="max-price" type="text" value="15000">
 						</div>
 					</div>		
 					<form action="form.php" class="form">
 						<h2 class="inner-grid">сетка</h2>
-                		<fieldset>
-                	    	<label>
-                	        	<input type="radio" name="supply" value="adaptive" checked><span>Aдаптивная</span>   
-                    		</label>
-                     		<label>
-                        		<input type="radio" name="supply" value="fixed"><span>Фиксированная</span>
-                    		</label>
-                    		<label>
-                        		<input type="radio" name="supply" value="rubber"><span>Резиновая</span>
-                    		</label>    
-                		</fieldset>
+                		<fieldset class="field-grid">
+                	    	<label for="adaptive">адаптивная</label>
+                	        <input type="radio" id="adaptive" class="supply" value="adaptive" checked><span>Aдаптивная</span>   
+                     		<label for="fixed">фиксированная</label>
+                        	<input type="radio" id="fixed" class="supply" value="fixed"><span>Фиксированная</span>
+                       		<label for="rubber">резиновая</label>
+                        	<input type="radio" id="rubber" name="class" value="rubber"><span>Резиновая</span>
+                 		</fieldset>
                 		<h2 class="inner-features">особенности</h2>
                 		<fieldset class="inner-features-block">
                     		<label class="checkbox-field">
-                    	   		<input type="checkbox" checked><span>Слайдер</span>
+                    	   	<input type="checkbox" checked><span>Слайдер</span>
                     		</label>
                    			<label class="checkbox-on-field">
-                    	   		<input type="checkbox"><span>Блок преимуществ</span>
+                    	   	<input type="checkbox"><span>Блок преимуществ</span>
                    			</label>
                    			<label class="checkbox-field">
-                    	   		<input type="checkbox" checked><span>Новости</span>
+                    	   	<input type="checkbox" checked><span>Новости</span>
                    			</label>
                    			<label class="checkbox-on-field">
-                   				<input type="checkbox"><span>Галерея</span>
+                   			<input type="checkbox"><span>Галерея</span>
                    			</label>
                    			<label class="checkbox-on-field">
-                    	   		<input type="checkbox"><span>Корзина</span>
+                    	   	<input type="checkbox"><span>Корзина</span>
                    			</label>
                			</fieldset>
                			<button type="submit" class="inner-submit">показать</button>
@@ -95,7 +82,7 @@
                                 <a href="#">По названию</a>      
                             </div>
                             <div class="sorting-container">
-                                <a href="#" class="down">вниз</a>
+                                <a href="#" class="down active">вниз</a>
                                 <a href="#" class="up">вверх</a>
                             </div>
             		    </div>    
@@ -136,7 +123,7 @@
             					<img src="img/mishka.jpg" width="360" height="617" alt="mishka">
             				</div>
             				<div class="templates-hover">
-            					<h3>MISHKA</h3>
+            					<h3>mishka</h3>
             					<p>Интернет-магазин вязаных игрушек</p>
             					<a href="#" class="btn">9900 руб.</a>
             				</div>
@@ -156,7 +143,7 @@
             					<img src="img/kvast.jpg" width="360" height="617" alt="кваст">
             				</div>
             				<div class="templates-hover">
-            					<h3>КВАСТ</h3>
+            					<h3>кваст</h3>
             					<p>Промо-сайт производителя крафтового кваса</p>
             					<a href="#" class="btn">9900 руб.</a>
             				</div>
